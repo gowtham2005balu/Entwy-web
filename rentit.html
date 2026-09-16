@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentit by Entwy | Rental Marketplace</title>
+  <meta name="description"
+    content="Rentit is Entwy's rental marketplace platform connecting people directly to list and find items to rent. Explore how Rentit works.">
+  <meta property="og:title" content="Rentit by Entwy | Rental Marketplace">
+  <meta property="og:description" content="Rentit is Entwy's rental marketplace platform connecting people directly to list and find items to rent. Explore how Rentit works.">
+  <meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+  <meta property="og:url" content="https://entwy.com/rentit">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rentit by Entwy | Rental Marketplace">
+  <meta name="twitter:description" content="Rentit is Entwy's rental marketplace platform connecting people directly to list and find items to rent. Explore how Rentit works.">
+  <meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+  <link rel="canonical" href="https://entwy.com/rentit">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Urbanist:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="rentit-page">
+  <div class="content-wrapper">
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <div class="header-wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/" class="logo-icon">
+            <img src="/images/entwy-logo.png" alt="Entwy Logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/">ENTERPRISE</a>
+          <div class="nav-item-dropdown">
+            <a href="/product" class="nav-dropdown-trigger active">
+              PRODUCTS
+              <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-heading">PRODUCTS</div>
+              <div class="dropdown-list">
+                <a href="/product" class="dropdown-link">Huzzler</a>
+                <a href="/wiviy" class="dropdown-link">Wiviy</a>
+                <a href="/rentit" class="dropdown-link active">Rentit</a>
+                <a href="/products/mungo" class="dropdown-link">Mungo</a>
+                <a href="/z01" class="dropdown-link">Z01</a>
+                <a href="/zuca" class="dropdown-link">Zuca</a>
+              </div>
+            </div>
+          </div>
+          <a href="/insights">RESOURCES</a>
+          <a href="/about">ABOUT US</a>
+          <a href="/careers">CAREERS</a>
+          <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+        </div>
+
+        <div class="nav-action">
+          <a href="/contact" class="btn-primary desktop-only">
+            REQUEST DEMO
+            <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="rentit-main-content">
+
+      <!-- ============ SECTION 1: HERO / CASE STUDY ============ -->
+      <section class="rentit-hero-section" id="rentit-hero">
+        <div class="rentit-hero-container">
+          <div class="rentit-hero-canvas">
+
+            <!-- Layer 1: Villa Architecture Sunset Background (Defines aspect ratio) -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637501/ccc46abdde86b8ac1a803e1481a9984a703eb65d_liwemj.png"
+              alt="RentIt Luxury Property Architecture Background" class="rentit-hero-img-base" loading="eager" />
+
+            <!-- Layer 2: Dual 3D iPhone Mockups (Property Details & RentIt Home) -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637501/9fef52913a313ddf7edccd8f58a445c6232ad4ec_w9inxi.png"
+              alt="RentIt Dual 3D Mobile App Mockups" class="rentit-hero-img-phones" loading="eager" />
+
+            <!-- Layer 3: Top-Left Identity & Headline Box -->
+            <div class="rentit-hero-left">
+              <div class="rentit-hero-app-icon">
+                <img
+                  src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787646905/85335aa36c28db69000a7f4cf20f51f1a04a84ea_bey4sc.png"
+                  alt="RentIt App Icon" />
+              </div>
+              <h1 class="rentit-hero-title">
+                Rent smarter.<br />
+                Live better.
+              </h1>
+              <div class="rentit-hero-bar"></div>
+              <p class="rentit-hero-desc">
+                Find and rent verified properties easily with Rent It.
+              </p>
+            </div>
+
+            <!-- Layer 4: Top-Right Big RentIt Wordmark -->
+            <div class="rentit-hero-brand">
+              <span class="rentit-brand-rent">Rent</span><span class="rentit-brand-it">It</span>
+            </div>
+
+            <!-- Layer 5: Bottom-Right Glassmorphic Feature Strip -->
+            <div class="rentit-hero-glass-strip">
+              <div class="rentit-glass-item">
+                <div class="rentit-glass-icon rentit-glass-icon-logo">
+                  <img
+                    src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787646905/85335aa36c28db69000a7f4cf20f51f1a04a84ea_bey4sc.png"
+                    alt="RentIt" />
+                </div>
+                <span>Wide range<br />of properties</span>
+              </div>
+
+              <div class="rentit-glass-item">
+                <div class="rentit-glass-icon rentit-glass-icon-badge">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </div>
+                <span>Verified<br />&amp; trusted</span>
+              </div>
+
+              <div class="rentit-glass-item">
+                <div class="rentit-glass-icon rentit-glass-icon-badge">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <span>Fast &amp; easy<br />renting</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 2: DISCOVERY & MOBILE EXPERIENCE ============ -->
+      <section class="rentit-s2-section" id="rentit-discovery">
+        <div class="rentit-s2-container">
+          <div class="rentit-s2-grid">
+
+            <!-- Card 1 (Left): 700px x 518px - App Overview -->
+            <div class="rentit-s2-card rentit-s2-card-left">
+              <div class="rentit-dot-pattern rentit-dot-pattern-c1"></div>
+              <div class="rentit-s2-c1-content">
+                <h3 class="rentit-s2-c1-title">
+                  <span class="rentit-orange">Rent It</span> is a simple app that helps you<br />
+                  find and rent properties quickly and easily.
+                </h3>
+              </div>
+              <div class="rentit-s2-c1-mockup">
+                <img
+                  src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637525/6c159dfcabb1e81946a7eb9abbacb6f42ec43c3f_cdmdgk.png"
+                  alt="RentIt Simple App Overview & Dashboard" class="rentit-s2-c1-img" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Card 2 (Right): 505px x 518px - Hand Holding Mobile Property Listing -->
+            <div class="rentit-s2-card rentit-s2-card-right">
+              <img src="/images/rentit_s2_hand_card.png" alt="RentIt Hand Holding Mobile Property Listing"
+                class="rentit-s2-c2-full-img" loading="lazy" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 3: WISHLIST & SAVED PROPERTIES ============ -->
+      <section class="rentit-s3-section" id="rentit-wishlist">
+        <div class="rentit-s3-container">
+          <div class="rentit-s3-card">
+
+            <div class="rentit-dot-pattern rentit-dot-pattern-s3"></div>
+
+            <!-- Left Content Column -->
+            <div class="rentit-s3-left">
+              <div class="rentit-s3-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <span>WISHLIST</span>
+              </div>
+
+              <h2 class="rentit-s3-heading">
+                Your saved<br />
+                properties,<br />
+                <span class="rentit-orange">all in one place.</span>
+              </h2>
+
+              <div class="rentit-s3-bar"></div>
+
+              <p class="rentit-s3-desc">
+                View, organize, and manage all the properties you love in your Wishlist.
+              </p>
+
+              <div class="rentit-s3-features">
+                <div class="rentit-s3-feature-item">
+                  <div class="rentit-s3-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                  </div>
+                  <span>Save your favorite properties</span>
+                </div>
+
+                <div class="rentit-s3-feature-item">
+                  <div class="rentit-s3-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                    </svg>
+                  </div>
+                  <span>Access anytime, anywhere</span>
+                </div>
+
+                <div class="rentit-s3-feature-item">
+                  <div class="rentit-s3-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                    </svg>
+                  </div>
+                  <span>Get updates on saved listings</span>
+                </div>
+
+                <div class="rentit-s3-feature-item">
+                  <div class="rentit-s3-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                    </svg>
+                  </div>
+                  <span>Organize and manage easily</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Graphic Mockup (Fan of 5 Phones) -->
+            <div class="rentit-s3-mockup-wrapper">
+              <img
+                src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637523/2cc62f02aabe402efb5d7204df171d6168e559b9_lhjh5t.png"
+                alt="RentIt 5 Phones Wishlist & Property Fan Mockup" class="rentit-s3-mockup-img" loading="lazy" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 4: PROPERTY DETAILS & RENTAL APP SHOWCASE ============ -->
+      <section class="rentit-s4-section" id="rentit-property-details">
+        <div class="rentit-s4-container">
+          <div class="rentit-s4-card">
+
+            <!-- Background Graphic Canvas -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787638213/ChatGPT_Image_Aug_25_2026_11_39_31_AM_klg7ri.png"
+              alt="RentIt Property Rental App" class="rentit-s4-card-img" loading="lazy" />
+
+            <!-- Live Text Overlay Layer 1: Top Headline -->
+            <div class="rentit-s4-headline">
+              Rent It is a property rental app<br />
+              where users can find and rent<br />
+              different types of properties such
+            </div>
+
+            <!-- Live Text Overlay Layer 2: Left Property Preview Details -->
+            <div class="rentit-s4-prop-info">
+              <div class="rentit-s4-prop-top">
+                <div class="rentit-s4-badge">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  </svg>
+                  <span>PREMIUM PROPERTY</span>
+                </div>
+
+                <h3 class="rentit-s4-prop-title">Single Room for Male</h3>
+
+                <div class="rentit-s4-prop-loc">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Raidurg, Hyderabad • Tower C • 14th Floor</span>
+                </div>
+
+                <div class="rentit-s4-prop-posted">Posted 3 days ago</div>
+              </div>
+
+              <div class="rentit-s4-prop-mid">
+                <div class="rentit-s4-prop-price">
+                  <span class="rentit-s4-price-num">₹ 95,500</span><span class="rentit-s4-price-unit">/mo</span>
+                </div>
+
+                <div class="rentit-s4-prop-meta">
+                  <div class="rentit-s4-meta-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2">
+                      <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9" />
+                    </svg>
+                    <span>1 Room</span>
+                  </div>
+                  <div class="rentit-s4-meta-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2">
+                      <path
+                        d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0l-.88.88a1.5 1.5 0 0 0 0 2.12L6 9M4 14l16 0M4 18l16 0" />
+                    </svg>
+                    <span>1 Bathroom</span>
+                  </div>
+                  <div class="rentit-s4-meta-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2">
+                      <path d="M21 3H3v18h18V3zM9 3v18M15 3v18M3 9h18M3 15h18" />
+                    </svg>
+                    <span>2075 sq.ft</span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="rentit-s4-view-btn" type="button" onclick="window.location.href='/contact'">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <span>View Details</span>
+              </button>
+            </div>
+
+            <!-- Live Text Overlay Layer 3: Bottom Callout Quote -->
+            <div class="rentit-s4-callout">
+              <div class="rentit-s4-callout-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F2347" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 17 5-5-5-5M13 17l5-5-5-5" />
+                </svg>
+              </div>
+              <p class="rentit-s4-callout-text">
+                A modern <strong>single room for male</strong> located in the heart of Raidurg, Hyderabad. Fully
+                furnished with <strong>premium interiors, high-speed Wi-Fi,</strong> and excellent connectivity at
+                <strong>₹95,500 per month.</strong> Ideal for working professionals.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 5: FEATURED PROPERTY & PREMIUM SHOWCASE ============ -->
+      <section class="rentit-s5-section" id="rentit-featured">
+        <div class="rentit-s5-container">
+          <div class="rentit-s5-card">
+            <!-- Background Graphic Canvas -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787649203/real_estate_banner_exact_4k_qlulru.png"
+              alt="RentIt — Find Your Perfect Space. Rent It Your Way." class="rentit-s5-card-img" loading="lazy" />
+
+            <!-- Top Header (Logo + Badge) -->
+            <div class="rentit-s5-header">
+              <div class="rentit-s5-logo">
+                <span class="rentit-s5-logo-rent">RENT</span><span class="rentit-s5-logo-it">IT</span>
+              </div>
+              <div class="rentit-s5-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span>FEATURED PROPERTY</span>
+              </div>
+            </div>
+
+            <!-- Headline Area -->
+            <div class="rentit-s5-headline-wrap">
+              <h2 class="rentit-s5-title">
+                Find Your Perfect Space.<br />
+                <span class="rentit-orange">Rent It Your Way.</span>
+              </h2>
+              <p class="rentit-s5-subtitle">
+                Thousands of verified properties.<br />
+                One app. Endless possibilities.
+              </p>
+            </div>
+
+            <!-- 4 Features Grid (2x2) -->
+            <div class="rentit-s5-features-grid">
+              <!-- Feature 1 -->
+              <div class="rentit-s5-feat-card">
+                <div class="rentit-s5-feat-icon rentit-icon-green">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <div class="rentit-s5-feat-text">
+                  <h4>Verified Listings</h4>
+                  <p>All properties are verified for your safety and peace of mind.</p>
+                </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="rentit-s5-feat-card">
+                <div class="rentit-s5-feat-icon rentit-icon-purple">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <div class="rentit-s5-feat-text">
+                  <h4>No Hidden Charges</h4>
+                  <p>Transparent pricing with zero hidden surprises.</p>
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="rentit-s5-feat-card">
+                <div class="rentit-s5-feat-icon rentit-icon-green">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                    <path
+                      d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                  </svg>
+                </div>
+                <div class="rentit-s5-feat-text">
+                  <h4>Direct Contact</h4>
+                  <p>Connect directly with owners, no middlemen.</p>
+                </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="rentit-s5-feat-card">
+                <div class="rentit-s5-feat-icon rentit-icon-blue">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                </div>
+                <div class="rentit-s5-feat-text">
+                  <h4>Easy Booking</h4>
+                  <p>Shortlist, schedule visits & book your space easily.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="rentit-s5-cta-wrap">
+              <button class="rentit-s5-explore-btn" type="button" onclick="window.location.href='/contact'">
+                <span>Explore Properties</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Bottom Upgrade Bar Content -->
+            <div class="rentit-s5-bar-content">
+              <div class="rentit-s5-bar-text">
+                <h4>Upgrade to Premium Today!</h4>
+                <p>Enjoy exclusive benefits and a seamless renting experience.</p>
+              </div>
+              <button class="rentit-s5-upgrade-btn" type="button" onclick="window.location.href='/contact'">
+                <span>Upgrade Now</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+              <img src="/images/entwy-icon.png" alt="Entwy Logo" class="footer-logo">
+              <span class="footer-logo-text">ENTWY</span>
+            </div>
+            <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>COMPANY</h4>
+            </div>
+            <a href="/about">About Us</a>
+            <a href="/insights">Research Insights</a>
+            <a href="/careers">Careers</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>PRODUCTS</h4>
+            </div>
+            <a href="/product">Huzzler</a>
+            <a href="/wiviy">Wiviy</a>
+            <a href="/rentit">Rentit</a>
+            <a href="/products/mungo">Mungo</a>
+            <a href="/z01">Z01</a>
+            <a href="/zuca">Zuca</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>INDUSTRIES</h4>
+            </div>
+            <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp; Scalable
+              Platforms</a>
+            <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+            <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+            <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+            <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+            <a href="/industries/banking-investment">Banking &amp; Investment</a>
+            <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+            <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>RESOURCES</h4>
+            </div>
+            <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+            <a href="/entwy-product-design-residency">Product Design Residency</a>
+            <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX
+              26 Competition</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+            </div>
+            <p class="hq-label">SOUTH ASIA HQ</p>
+            <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564
+                58490</a></p>
+            <p class="email"><a href="mailto:info@entwy.com"
+                style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+            <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi,
+              Chennai - 600096</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4 class="invisible">LOCATION</h4>
+            </div>
+            <p class="subtitle">NORTH AMERICA</p>
+            <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+              rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <div class="copyright">
+            © 2026 Entwy Digital Private Limited. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('active');
+        navLinks.classList.toggle('mobile-active');
+      }
+    }
+
+    // Support click toggle on PRODUCTS dropdown
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = trigger.closest('.nav-item-dropdown');
+        if (parent) {
+          parent.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries | Entwy AI & Digital Solutions</title>
+  <meta name="description"
+    content="Entwy builds AI systems and digital products for industries including digital enterprise, education, retail, healthcare, banking, energy, and logistics.">
+  <meta property="og:title" content="Industries | Entwy AI & Digital Solutions">
+  <meta property="og:description" content="Entwy builds AI systems and digital products for industries including digital enterprise, education, retail, healthcare, banking, energy, and logistics.">
+  <meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+  <meta property="og:url" content="https://entwy.com/industries">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Industries | Entwy AI & Digital Solutions">
+  <meta name="twitter:description" content="Entwy builds AI systems and digital products for industries including digital enterprise, education, retail, healthcare, banking, energy, and logistics.">
+  <meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+  <link rel="canonical" href="https://entwy.com/industries">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="industries-page">
+  <div class="content-wrapper" style="position: relative; background: white;">
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <div class="header-wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/" class="logo-icon">
+            <img src="/images/entwy-logo.png" alt="Entwy Logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/">ENTERPRISE</a>
+          <div class="nav-item-dropdown">
+            <a href="/product" class="nav-dropdown-trigger">
+              PRODUCTS
+              <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-heading">PRODUCTS</div>
+              <div class="dropdown-list">
+                <a href="/product" class="dropdown-link">Huzzler</a>
+                <a href="/wiviy" class="dropdown-link">Wiviy</a>
+                <a href="/rentit" class="dropdown-link">Rentit</a>
+                <a href="/products/mungo" class="dropdown-link">Mungo</a>
+                <a href="/z01" class="dropdown-link">Z01</a>
+                <a href="/zuca" class="dropdown-link">Zuca</a>
+              </div>
+            </div>
+          </div>
+          <a href="/insights">RESOURCES</a>
+          <a href="/about">ABOUT US</a>
+          <a href="/careers">CAREERS</a>
+          <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+        </div>
+
+        <div class="nav-action">
+          <a href="/contact" class="btn-primary desktop-only">
+            REQUEST DEMO
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+
+      <!-- HERO -->
+      <section class="ind-hero">
+        <div class="orb-1"></div>
+        <div class="orb-2"></div>
+        <div class="ind-container" style="max-width: 1400px; margin: 0 auto; padding: 0 40px;">
+          <div class="ind-hero-inner">
+            <span class="ind-eyebrow">Our Industries</span>
+            <h1 class="ind-hero-title">Technology Built Around Your <span class="accent-purple">Industry.</span></h1>
+            <p class="ind-hero-sub">From enterprise platforms and financial services to healthcare, education, retail,
+              and industrial supply chains, Entwy helps organizations solve complex business challenges through design,
+              engineering, and AI.</p>
+            <div class="ind-hero-ctas">
+              <a href="/contact" class="btn-primary">Let's Build &rarr;</a>
+              <a href="#explorer" class="btn-secondary">Explore Industries</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRY EXPLORER -->
+      <section class="ind-section" id="explorer" style="background: #ffffff;">
+        <div class="ind-container">
+          <div class="ind-section-head">
+            <span class="ind-eyebrow">Industries We Serve</span>
+            <h2>Every industry, its own set of realities.</h2>
+            <p>Every industry has different users, workflows, regulations, and opportunities. We combine product
+              thinking, engineering, and AI to build solutions around those realities.</p>
+          </div>
+
+          <!-- Desktop Explorer -->
+          <div class="ind-explorer">
+            <div class="ind-explorer-list" id="explorerList" role="tablist" aria-label="Industries"></div>
+            <div class="ind-explorer-detail" id="explorerDetail"></div>
+          </div>
+
+          <!-- Mobile Accordion -->
+          <div class="ind-accordion" id="indAccordion"></div>
+        </div>
+      </section>
+
+      <!-- INDUSTRY CARDS GRID -->
+      <section class="ind-section" style="background: #ffffff;">
+        <div class="ind-container">
+          <div class="ind-section-head" style="text-align: left; margin: 0 0 36px;">
+            <h2 style="font-size: 34px; font-weight: 800; color: #0F172A; margin: 0; letter-spacing: -0.5px;">Explore
+              Our Industry Expertise</h2>
+          </div>
+          <div class="ind-cards-grid" id="cardsGrid"></div>
+        </div>
+      </section>
+
+      <!-- AI ACROSS EVERY INDUSTRY -->
+      <section class="ind-ai-wrapper-section">
+        <div class="ind-ai-banner">
+          <div class="ind-ai-orb-tr"></div>
+          <div class="ind-ai-head">
+            <span class="ind-ai-eyebrow">AI ACROSS EVERY INDUSTRY</span>
+            <h2 class="ind-ai-title">
+              Intelligence That Works Where Your<br>
+              Business Needs It.
+            </h2>
+            <p class="ind-ai-sub">
+              AI becomes valuable when it is connected to real workflows, real users, and real business<br>
+              outcomes. Entwy integrates intelligence directly into the products and systems<br>
+              organizations rely on.
+            </p>
+          </div>
+          <div class="ind-ai-cards">
+            <!-- 01 -->
+            <div class="ind-ai-card">
+              <div class="ind-ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" />
+                </svg>
+              </div>
+              <span class="num">01</span>
+              <h3>AI-Powered Automation</h3>
+              <p>Removing manual work from repetitive, rule-based operational tasks.</p>
+            </div>
+
+            <!-- 02 -->
+            <div class="ind-ai-card">
+              <div class="ind-ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m21 21-4.35-4.35" />
+                </svg>
+              </div>
+              <span class="num">02</span>
+              <h3>Intelligent Search &amp;<br>Discovery</h3>
+              <p>Helping users find what matters, faster, across large datasets.</p>
+            </div>
+
+            <!-- 03 -->
+            <div class="ind-ai-card">
+              <div class="ind-ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 3v18h18" />
+                  <path d="m19 9-5 5-4-4-4 4" />
+                </svg>
+              </div>
+              <span class="num">03</span>
+              <h3>Predictive Analytics</h3>
+              <p>Turning historical data into forward-looking business decisions.</p>
+            </div>
+
+            <!-- 04 -->
+            <div class="ind-ai-card">
+              <div class="ind-ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                </svg>
+              </div>
+              <span class="num">04</span>
+              <h3>Conversational<br>Experiences</h3>
+              <p>Building natural, assistant-driven interfaces into your product.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW ENTWY HELPS -->
+      <section class="ind-section" style="background: #ffffff;">
+        <div class="ind-container">
+          <div class="ind-section-head" style="text-align: left; margin: 0 0 52px;">
+            <span class="ind-eyebrow"
+              style="font-size: 11.5px; font-weight: 800; color: #5B44F2; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; display: block;">HOW
+              ENTWY HELPS</span>
+            <h2
+              style="font-size: 38px; font-weight: 900; color: #0F172A; line-height: 1.18; letter-spacing: -0.8px; margin: 0 0 18px;">
+              From Industry Challenge to Digital<br>Advantage
+            </h2>
+            <p style="font-size: 15px; line-height: 24px; color: #64748B; max-width: 650px; margin: 0;">
+              We bring product strategy, experience design, engineering, and AI integration<br>
+              together<br>
+              under one team.
+            </p>
+          </div>
+          <div class="ind-process-track">
+            <div class="ind-process-step">
+              <div class="ind-step-dot">01</div>
+              <h3>Understand</h3>
+              <p>Industry context, users, workflows, and business goals.</p>
+            </div>
+            <div class="ind-process-step">
+              <div class="ind-step-dot">02</div>
+              <h3>Design</h3>
+              <p>Experiences built around real-world behavior.</p>
+            </div>
+            <div class="ind-process-step">
+              <div class="ind-step-dot">03</div>
+              <h3>Engineer</h3>
+              <p>Scalable platforms and reliable technical foundations.</p>
+            </div>
+            <div class="ind-process-step">
+              <div class="ind-step-dot">04</div>
+              <h3>Integrate</h3>
+              <p>Connect systems, data, APIs, and AI.</p>
+            </div>
+            <div class="ind-process-step">
+              <div class="ind-step-dot">05</div>
+              <h3>Scale</h3>
+              <p>Continuously improve products as the business grows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY ENTWY -->
+      <section class="ind-section" style="background: #ffffff;">
+        <div class="ind-container">
+          <div class="ind-section-head" style="text-align: left; margin: 0 0 36px;">
+            <h2 style="font-size: 34px; font-weight: 800; color: #0F172A; margin: 0; letter-spacing: -0.5px;">Why Businesses Choose Entwy</h2>
+          </div>
+          <div class="ind-why-grid">
+            <div class="ind-why-card">
+              <h3>ONE TEAM</h3>
+              <p>Design, engineering, and AI under one roof.</p>
+            </div>
+            <div class="ind-why-card">
+              <h3>BUILT FOR GROWTH</h3>
+              <p>Architecture and products designed to scale.</p>
+            </div>
+            <div class="ind-why-card">
+              <h3>AI-NATIVE</h3>
+              <p>Intelligence integrated into products from the beginning.</p>
+            </div>
+            <div class="ind-why-card">
+              <h3>INDUSTRY-AWARE</h3>
+              <p>Solutions shaped around real business workflows and constraints.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BAND -->
+      <section class="ind-bottom-cta-section">
+        <div class="ind-bottom-banner">
+          <span class="ind-cta-eyebrow">JOIN ENTWY</span>
+          <h2 class="ind-cta-title">Build What's Next for Your Industry</h2>
+          <p class="ind-cta-sub">
+            Have a complex product, platform, or AI opportunity? Let's turn it into<br>
+            something useful, scalable, and intelligent.
+          </p>
+          <div class="ind-cta-btns">
+            <a href="/contact" class="ind-btn-purple">
+              Start a Conversation
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="/contact" class="ind-btn-white">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ COMMON FOOTER ============ -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-top">
+          <!-- Brand Column -->
+          <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+              <img src="/images/entwy-icon.png" alt="Entwy Logo" class="footer-logo">
+              <span class="footer-logo-text">ENTWY</span>
+            </div>
+            <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+          </div>
+
+          <!-- COMPANY -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>COMPANY</h4>
+            </div>
+            <a href="/about">About Us</a>
+            <a href="/insights">Research Insights</a>
+            <a href="/careers">Careers</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+
+          <!-- PRODUCTS -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>PRODUCTS</h4>
+            </div>
+            <a href="/product">Huzzler</a>
+            <a href="/wiviy">Wiviy</a>
+            <a href="/rentit">Rentit</a>
+            <a href="/products/mungo">Mungo</a>
+            <a href="/z01">Z01</a>
+            <a href="/zuca">Zuca</a>
+          </div>
+
+          <!-- INDUSTRIES -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>INDUSTRIES</h4>
+            </div>
+            <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp;
+              Scalable Platforms</a>
+            <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+            <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+            <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+            <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+            <a href="/industries/banking-investment">Banking &amp; Investment</a>
+            <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+            <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+          </div>
+
+          <!-- RESOURCES -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>RESOURCES</h4>
+            </div>
+            <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+            <a href="/entwy-product-design-residency">Product Design Residency</a>
+            <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX
+              26 Competition</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+            </div>
+            <p class="hq-label">SOUTH ASIA HQ</p>
+            <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564
+                58490</a></p>
+            <p class="email"><a href="mailto:info@entwy.com"
+                style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+            <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi,
+              Chennai - 600096</p>
+          </div>
+
+          <!-- NORTH AMERICA -->
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4 class="invisible">LOCATION</h4>
+            </div>
+            <p class="subtitle">NORTH AMERICA</p>
+            <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+              rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <div class="copyright">
+            © 2026 Entwy Digital Private Limited. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // ---------- DATA ----------
+    const industries = [
+      {
+        num: "01",
+        short: "Digital Enterprises",
+        title: "Digital Enterprises & Scalable Platforms",
+        eyebrow: "01 / Digital Enterprises",
+        desc: "Modern enterprises need digital platforms that are fast, scalable, connected, and intelligent. Entwy helps organizations transform complex products and legacy workflows into digital experiences built for growth.",
+        cardDesc: "Scalable platforms and intelligent enterprise applications.",
+        solutions: ["Enterprise SaaS Platforms", "Digital Business Platforms", "Customer & Partner Portals", "Workflow & Operations Systems", "AI-Powered Enterprise Applications", "Scalable Web & Cloud Platforms"],
+        caps: ["Product Strategy", "UX/UI Design", "Web & Platform Engineering", "Cloud Architecture", "Systems Integration", "AI Integration"],
+        icon: '<path d="M4 21V7l8-4 8 4v14"/><path d="M4 11h16"/><path d="M9 21v-6h6v6"/>'
+      },
+      {
+        num: "02",
+        short: "Education",
+        title: "Education, Learning & Skill Development",
+        eyebrow: "02 / Education",
+        desc: "Create engaging learning experiences that make education more accessible, personalized, and measurable for global learners.",
+        cardDesc: "Digital learning and skill development experiences.",
+        solutions: ["Learning Management Platforms", "Student Portals", "Digital Learning Experiences", "Assessment & Evaluation Systems", "Skill Development Platforms", "AI-Powered Learning Tools"],
+        caps: ["UX/UI Design", "Learning Experience Design", "Platform Engineering", "Analytics", "AI Integration"],
+        icon: '<path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>'
+      },
+      {
+        num: "03",
+        short: "Consumer & Retail",
+        title: "Consumer Products & Retail Innovation",
+        eyebrow: "03 / Consumer & Retail",
+        desc: "Build digital experiences that connect consumers with products, brands, and services across every stage of the omnichannel journey.",
+        cardDesc: "Connected commerce and customer experiences.",
+        solutions: ["E-commerce Platforms", "D2C Experiences", "Customer Apps", "Product Discovery", "Personalization Systems", "Retail Operations Platforms"],
+        caps: ["Experience Design", "Commerce Engineering", "Customer Analytics", "Personalization", "AI Integration"],
+        icon: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>'
+      },
+      {
+        num: "04",
+        short: "Lifestyle & Wellness",
+        title: "Lifestyle, Wellness & Personal Care",
+        eyebrow: "04 / Lifestyle & Wellness",
+        desc: "Create digital products that make wellness, beauty, lifestyle, and personal care experiences more personalized and accessible.",
+        cardDesc: "Personalized digital experiences for modern lifestyles.",
+        solutions: ["Wellness Platforms", "Beauty & Personal Care Apps", "Booking & Membership Platforms", "Personalized Experiences", "Customer Engagement Systems", "AI-Powered Recommendations"],
+        caps: ["Product Design", "Mobile & Web Development", "Personalization", "Automation", "AI Integration"],
+        icon: '<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/>'
+      },
+      {
+        num: "05",
+        short: "Healthcare",
+        title: "Healthcare, Insurance & Pharmaceutical",
+        eyebrow: "05 / Healthcare",
+        desc: "Build secure, accessible, and intelligent digital experiences for patients, providers, insurers, and healthcare organizations.",
+        cardDesc: "Secure and intelligent healthcare ecosystems.",
+        solutions: ["Patient Platforms", "Healthcare Applications", "Insurance Platforms", "Claims & Workflow Systems", "Healthcare Analytics", "Pharmaceutical Digital Platforms"],
+        caps: ["UX/UI Design", "Secure Engineering", "Data Platforms", "Workflow Automation", "AI Integration"],
+        icon: '<path d="M12 21s-7-4.35-9.5-8.5C.7 8.6 2.4 5 6 5c2 0 3.3 1.1 4 2 0-.9 2-2 4-2 3.6 0 5.3 3.6 3.5 7.5C19 16.65 12 21 12 21Z"/><path d="M9 11h6M12 8v6"/>'
+      },
+      {
+        num: "06",
+        short: "Banking & Investment",
+        title: "Banking & Investment",
+        eyebrow: "06 / Banking & Investment",
+        desc: "Design secure and intuitive financial experiences that simplify complex workflows and help institutions deliver better customer experiences.",
+        cardDesc: "Digital financial experiences and platforms.",
+        solutions: ["Digital Banking Platforms", "Investment Platforms", "Customer Portals", "Financial Analytics", "Wealth Management Experiences", "AI-Powered Financial Workflows"],
+        caps: ["Product Strategy", "UX/UI Design", "Secure Engineering", "Data Integration", "AI & Automation"],
+        icon: '<path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/>'
+      },
+      {
+        num: "07",
+        short: "Energy & Industrial",
+        title: "Energy, Commodities & Industrial Supply",
+        eyebrow: "07 / Energy & Industrial",
+        desc: "Connect complex industrial operations with intelligent digital platforms built for visibility, efficiency, and scale.",
+        cardDesc: "Connected systems for complex industrial operations.",
+        solutions: ["Industrial Platforms", "Supply & Procurement Systems", "Operations Dashboards", "Asset Management Platforms", "Data & Analytics Systems", "AI-Powered Operations"],
+        caps: ["Platform Engineering", "Systems Integration", "Data Architecture", "Automation", "AI Integration"],
+        icon: '<path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/>'
+      },
+      {
+        num: "08",
+        short: "Supply Chain",
+        title: "Supply Chain & Logistics",
+        eyebrow: "08 / Supply Chain",
+        desc: "Create connected logistics experiences that improve visibility, coordination, and operational efficiency across the supply chain.",
+        cardDesc: "Intelligent platforms for logistics and supply chain visibility.",
+        solutions: ["Logistics Management Platforms", "Fleet & Delivery Systems", "Tracking & Visibility Platforms", "Warehouse Management", "Supply Chain Analytics", "Intelligent Routing & Automation"],
+        caps: ["Platform Engineering", "API Integration", "Data & Analytics", "Workflow Automation", "AI Integration"],
+        icon: '<path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="18" cy="19.5" r="1.5"/>'
+      }
+    ];
+
+    const list = document.getElementById('explorerList');
+    const detail = document.getElementById('explorerDetail');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const accordion = document.getElementById('indAccordion');
+
+    let activeIndex = 0;
+
+    function renderDetail(i) {
+      activeIndex = i;
+      const ind = industries[i];
+      detail.innerHTML = `
+        <div>
+          <p class="detail-eyebrow">${ind.eyebrow}</p>
+          <h3 class="detail-heading">${ind.title}</h3>
+          <p class="detail-desc">${ind.desc}</p>
+          <div class="detail-block">
+            <p class="detail-label">What We Help Build</p>
+            <ul class="solutions-grid">${ind.solutions.map(s => `<li>${s}</li>`).join('')}</ul>
+          </div>
+          <div class="detail-block">
+            <p class="detail-label">Technologies &amp; Capabilities</p>
+            <div class="chip-row">${ind.caps.map(c => `<span class="chip-tag">${c}</span>`).join('')}</div>
+          </div>
+        </div>
+        <div>
+          <a href="/contact" class="explore-sol-link">Explore Solutions for ${ind.short} &rarr;</a>
+        </div>
+      `;
+    }
+
+    function renderList() {
+      list.innerHTML = industries.map((ind, i) => `
+        <button class="ind-item-btn ${i === activeIndex ? 'active' : ''}" data-i="${i}" role="tab" aria-selected="${i === activeIndex}">
+          <span class="num">${ind.num}</span>
+          <span class="name">${ind.title}</span>
+        </button>
+      `).join('');
+
+      list.querySelectorAll('.ind-item-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          list.querySelectorAll('.ind-item-btn').forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          renderDetail(+btn.dataset.i);
+        });
+      });
+    }
+
+    const industrySlugs = [
+      '/industries/digital-enterprises-scalable-platforms',
+      '/industries/education-learning-skill-development',
+      '/industries/consumer-products-retail-innovation',
+      '/industries/lifestyle-wellness-personal-care',
+      '/industries/healthcare-insurance-pharmaceutical',
+      '/industries/banking-investment',
+      '/industries/energy-commodities-industrial-supply',
+      '/industries/supply-chain-logistics'
+    ];
+
+    function updateFooterActiveIndustry(i) {
+      document.querySelectorAll('.footer-col a').forEach(link => {
+        const href = link.getAttribute('href') || '';
+        if (href === industrySlugs[i] || href.includes(`ind=${i}`)) {
+          link.style.color = 'var(--primary)';
+          link.style.fontWeight = '600';
+        } else if (href.includes('/industries') || href.includes('ind=')) {
+          link.style.color = '';
+          link.style.fontWeight = '';
+        }
+      });
+    }
+
+    function selectIndustry(i, scroll = true, updateUrl = true) {
+      if (i < 0 || i >= industries.length) return;
+      activeIndex = i;
+      renderList();
+      renderDetail(i);
+      updateFooterActiveIndustry(i);
+
+      if (updateUrl && industrySlugs[i] && window.location.pathname !== industrySlugs[i]) {
+        history.pushState(null, '', industrySlugs[i]);
+      }
+
+      // Open accordion on mobile if active
+      if (accordion) {
+        accordion.querySelectorAll('.ind-acc-item').forEach((item, idx) => {
+          const panel = item.querySelector('.ind-acc-panel');
+          if (idx === i) {
+            item.classList.add('open');
+            if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+          } else {
+            item.classList.remove('open');
+            if (panel) panel.style.maxHeight = null;
+          }
+        });
+      }
+
+      // Smooth scroll to explorer
+      if (scroll) {
+        const expElem = document.getElementById('explorer');
+        if (expElem) {
+          expElem.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+    function renderCards() {
+      cardsGrid.innerHTML = industries.map((ind, i) => `
+        <a href="${industrySlugs[i]}" class="ind-card-item" onclick="selectIndustry(${i}); return false;">
+          <div class="ind-card-top">
+            <div class="ind-card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ind.icon}</svg>
+            </div>
+            <span class="num">${ind.num}</span>
+            <h3>${ind.short}</h3>
+            <p>${ind.cardDesc}</p>
+          </div>
+          <div class="ind-card-arrow">
+            &rarr;
+          </div>
+        </a>
+      `).join('');
+    }
+
+    function renderAccordion() {
+      accordion.innerHTML = industries.map((ind, i) => `
+        <div class="ind-acc-item ${i === 0 ? 'open' : ''}" data-i="${i}">
+          <button class="ind-acc-trigger">
+            <span class="num">${ind.num}</span>
+            <span class="name">${ind.title}</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="ind-acc-panel">
+            <div class="ind-acc-panel-inner">
+              <p class="detail-eyebrow">${ind.eyebrow}</p>
+              <h3 class="detail-heading" style="font-size: 22px;">${ind.title}</h3>
+              <p class="detail-desc">${ind.desc}</p>
+              <div class="detail-block">
+                <p class="detail-label">What We Help Build</p>
+                <ul class="solutions-grid">${ind.solutions.map(s => `<li>${s}</li>`).join('')}</ul>
+              </div>
+              <div class="detail-block">
+                <p class="detail-label">Technologies &amp; Capabilities</p>
+                <div class="chip-row">${ind.caps.map(c => `<span class="chip-tag">${c}</span>`).join('')}</div>
+              </div>
+              <a href="/contact" class="explore-sol-link">Explore Solutions &rarr;</a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      accordion.querySelectorAll('.ind-acc-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.closest('.ind-acc-item');
+          const panel = item.querySelector('.ind-acc-panel');
+          const isOpen = item.classList.contains('open');
+          accordion.querySelectorAll('.ind-acc-item').forEach(other => {
+            other.classList.remove('open');
+            other.querySelector('.ind-acc-panel').style.maxHeight = null;
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+      });
+
+      const first = accordion.querySelector('.ind-acc-item.open .ind-acc-panel');
+      if (first) first.style.maxHeight = first.scrollHeight + 'px';
+    }
+
+    function getInitialIndustryIndex() {
+      const currentPath = window.location.pathname.replace(/\/$/, '');
+      const slugIndex = industrySlugs.indexOf(currentPath);
+      if (slugIndex !== -1) return slugIndex;
+
+      const params = new URLSearchParams(window.location.search);
+      const indParam = params.get('ind');
+      if (indParam !== null && !isNaN(indParam)) {
+        const idx = parseInt(indParam, 10);
+        if (idx >= 0 && idx < industries.length) return idx;
+      }
+      return 0;
+    }
+
+    // Attach click listeners to all industry footer links
+    document.querySelectorAll('.footer-col a').forEach(link => {
+      const href = link.getAttribute('href') || '';
+      const slugIdx = industrySlugs.indexOf(href.replace(/\/$/, ''));
+      if (slugIdx !== -1) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          selectIndustry(slugIdx, true, true);
+        });
+      } else {
+        const match = href.match(/ind=(\d+)/);
+        if (match) {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetIndex = parseInt(match[1], 10);
+            selectIndustry(targetIndex, true, true);
+          });
+        }
+      }
+    });
+
+    // Listen to browser Back/Forward navigation
+    window.addEventListener('popstate', () => {
+      const initialIdx = getInitialIndustryIndex();
+      selectIndustry(initialIdx, true, false);
+    });
+
+    // Initial load and URL check
+    const initialIndex = getInitialIndustryIndex();
+
+    renderList();
+    renderDetail(initialIndex);
+    renderCards();
+    renderAccordion();
+    updateFooterActiveIndustry(initialIndex);
+
+    if (initialIndex !== 0) {
+      setTimeout(() => {
+        selectIndustry(initialIndex, true, false);
+      }, 100);
+    }
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('active');
+      }
+    }
+
+    // Support click toggle on PRODUCTS dropdown
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = trigger.closest('.nav-item-dropdown');
+        if (parent) {
+          parent.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+      }
+    });
+  </script>
+</body>
+
+</html>

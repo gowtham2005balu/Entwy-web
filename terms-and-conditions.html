@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms &amp; Conditions — Entwy</title>
+<meta name="description" content="Terms & Conditions for Entwy.">
+<meta property="og:title" content="Terms &amp; Conditions — Entwy">
+<meta property="og:description" content="Terms & Conditions for Entwy.">
+<meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+<meta property="og:url" content="https://entwy.com/terms-and-conditions">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms &amp; Conditions — Entwy">
+<meta name="twitter:description" content="Terms & Conditions for Entwy.">
+<meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+<link rel="canonical" href="https://entwy.com/terms-and-conditions">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  :root{
+    --purple:#7144FE;
+    --purple-dark:#5b32e6;
+    --purple-soft:#F1EDFC;
+    --lavender-bg:#F7F5FE;
+    --lavender-border:#E5DEFA;
+    --navy:#16152B;
+    --navy-soft:#3B3A52;
+    --gray:#6B7280;
+    --gray-light:#9C9AB0;
+    --border:#ECEAF5;
+    --white:#FFFFFF;
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --max-width:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--navy);
+    background:var(--white);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:600;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max-width);margin:0 auto;padding:0 40px;}
+
+  /* ===== CTA BUTTONS ===== */
+  .cta-buttons .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13.5px;font-weight:600;
+    padding:11px 20px;border-radius:100px;
+    border:1px solid transparent;
+    cursor:pointer;transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .cta-buttons .btn-primary{background:var(--purple);color:#fff;width:auto;height:auto;}
+  .cta-buttons .btn-primary:hover{background:var(--purple-dark);box-shadow:0 8px 20px rgba(113,68,254,.35);transform:translateY(-1px);}
+  .cta-buttons .btn-secondary{background:#fff;color:var(--navy);border-color:var(--border);}
+  .cta-buttons .btn-secondary:hover{border-color:var(--purple);color:var(--purple);}
+  .cta-buttons .btn svg{width:13px;height:13px;}
+
+  /* ===== LEGAL HERO ===== */
+  .legal-hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#F8F6FE 0%,#FFFFFF 100%);
+    padding:100px 40px 76px;
+    text-align:center;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:640px;margin:0 auto;}
+  .eyebrow{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;
+    color:var(--purple);background:var(--purple-soft);
+    padding:6px 14px;border-radius:100px;margin-bottom:22px;
+  }
+  .legal-hero h1{
+    font-size:46px;line-height:1.12;font-weight:600;letter-spacing:-0.02em;
+    margin:0 0 18px;color:var(--navy);
+  }
+  .legal-hero p{
+    font-size:17px;line-height:1.6;color:var(--gray);margin:0 auto 14px;max-width:520px;
+  }
+  .last-updated{font-size:13px;color:var(--gray-light);font-weight:500;}
+
+  /* ===== LAYOUT ===== */
+  .legal-layout{
+    max-width:var(--max-width);margin:0 auto;
+    display:grid;grid-template-columns:240px 1fr;gap:64px;
+    padding:64px 40px 40px;
+    align-items:start;
+  }
+  .toc{position:sticky;top:96px;}
+  .toc-label{
+    font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--gray-light);
+    margin:0 0 14px;padding-left:14px;
+  }
+  .toc-list{display:flex;flex-direction:column;gap:2px;}
+  .toc-list a{
+    display:block;font-size:13.5px;font-weight:500;color:var(--navy-soft);
+    padding:9px 14px;border-radius:10px;
+    transition:background .15s ease,color .15s ease;
+    line-height:1.4;
+  }
+  .toc-list a:hover{background:#FAFAFD;color:var(--navy);}
+  .toc-list a.active{background:var(--purple-soft);color:var(--purple);font-weight:600;}
+
+  .mobile-toc{display:none;}
+
+  .legal-content{max-width:760px;}
+  .legal-content section{padding-top:52px;margin-top:-52px;}
+  .legal-content section:first-child{padding-top:0;margin-top:0;}
+  .legal-content h2{
+    font-size:29px;font-weight:600;letter-spacing:-0.01em;color:var(--navy);
+    margin:0 0 18px;
+  }
+  .legal-content h3{
+    font-size:18px;font-weight:600;color:var(--navy);
+    margin:26px 0 10px;
+  }
+  .legal-content p{
+    font-size:16px;line-height:1.78;color:var(--navy-soft);
+    margin:0 0 16px;
+  }
+  .legal-content ul{margin:0 0 18px;padding-left:0;}
+  .legal-content ul li{
+    list-style:none;position:relative;padding-left:26px;
+    font-size:15.5px;line-height:1.75;color:var(--navy-soft);margin-bottom:10px;
+  }
+  .legal-content ul li::before{
+    content:"";position:absolute;left:6px;top:9px;
+    width:6px;height:6px;border-radius:50%;background:var(--purple);
+  }
+  .section-divider{height:1px;background:var(--border);margin:48px 0;}
+
+  .callout{
+    background:var(--lavender-bg);
+    border:1px solid var(--lavender-border);
+    border-radius:var(--radius-md);
+    padding:22px 26px;margin:8px 0 32px;
+  }
+  .callout-label{
+    font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--purple);
+    margin-bottom:8px;display:block;
+  }
+  .callout p{margin:0;color:var(--navy-soft);font-size:15px;}
+
+  .contact-card{
+    display:flex;align-items:center;gap:16px;
+    border:1px solid var(--border);border-radius:var(--radius-md);
+    padding:22px 24px;margin-top:8px;
+  }
+  .contact-icon{
+    width:42px;height:42px;border-radius:12px;background:var(--purple-soft);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .contact-icon svg{width:19px;height:19px;color:var(--purple);}
+  .contact-card a{color:var(--purple);font-weight:600;}
+  .contact-card a:hover{text-decoration:underline;}
+
+  .legal-content a.inline-link{color:var(--purple);font-weight:600;}
+  .legal-content a.inline-link:hover{text-decoration:underline;}
+
+  .draft-note{
+    font-size:12.5px;color:var(--gray-light);font-style:italic;
+    margin-top:56px;padding-top:20px;border-top:1px solid var(--border);
+  }
+
+  /* ===== RELATED ===== */
+  .related-section{margin-top:56px;}
+  .related-section h3{
+    font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--gray);
+    text-transform:uppercase;margin:0 0 16px;
+  }
+  .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .related-card{
+    display:flex;align-items:center;justify-content:space-between;
+    border:1px solid var(--border);border-radius:var(--radius-md);
+    padding:20px 22px;font-weight:600;font-size:14.5px;color:var(--navy);
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .related-card:hover{border-color:var(--purple);background:var(--lavender-bg);}
+  .related-card svg{width:15px;height:15px;color:var(--purple);flex-shrink:0;}
+
+  /* ===== CTA ===== */
+  .cta-section{
+    margin:96px 0 0;
+    background:linear-gradient(135deg,#F1EDFC 0%,#F9F7FE 100%);
+    text-align:center;padding:80px 40px;
+    position:relative;overflow:hidden;
+  }
+  .cta-inner{position:relative;z-index:2;max-width:560px;margin:0 auto;}
+  .cta-section h2{font-size:34px;font-weight:600;letter-spacing:-0.02em;margin:0 0 16px;color:var(--navy);}
+  .cta-section p{font-size:16px;color:var(--gray);line-height:1.6;margin:0 0 30px;}
+  .cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+  /* ===== MOBILE ===== */
+  @media (max-width:980px){
+    .wrap,.legal-layout,.cta-section{padding-left:22px;padding-right:22px;}
+    .legal-hero{padding:56px 22px 48px;}
+    .legal-hero h1{font-size:32px;}
+    .legal-hero p{font-size:15.5px;}
+    .legal-layout{grid-template-columns:1fr;gap:0;padding-top:32px;}
+    .toc{display:none;}
+    .mobile-toc{display:block;margin-bottom:32px;}
+    .mobile-toc summary{
+      list-style:none;cursor:pointer;
+      display:flex;align-items:center;justify-content:space-between;
+      border:1px solid var(--border);border-radius:var(--radius-md);
+      padding:15px 18px;font-weight:600;font-size:14px;color:var(--navy);
+    }
+    .mobile-toc summary::-webkit-details-marker{display:none;}
+    .mobile-toc[open] summary{border-color:var(--purple);}
+    .mobile-toc-list{padding:10px 6px 4px;display:flex;flex-direction:column;gap:2px;}
+    .mobile-toc-list a{display:block;padding:10px 12px;font-size:14px;color:var(--navy-soft);border-radius:8px;}
+    .mobile-toc-list a:hover{background:var(--lavender-bg);color:var(--purple);}
+    .legal-content h2{font-size:24px;}
+    .related-grid{grid-template-columns:1fr;}
+    .cta-section{padding:56px 22px;margin-top:64px;}
+    .cta-section h2{font-size:26px;}
+    .cta-buttons .btn{flex:1;justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<div class="header-wrapper">
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/" class="logo-icon">
+        <img src="/images/entwy-logo.png" alt="Entwy Logo" />
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="/">ENTERPRISE</a>
+      <div class="nav-item-dropdown">
+        <a href="/product" class="nav-dropdown-trigger">
+          PRODUCTS
+          <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <div class="dropdown-heading">PRODUCTS</div>
+          <div class="dropdown-list">
+            <a href="/product" class="dropdown-link">Huzzler</a>
+            <a href="/wiviy" class="dropdown-link">Wiviy</a>
+            <a href="/rentit" class="dropdown-link">Rentit</a>
+            <a href="/products/mungo" class="dropdown-link">Mungo</a>
+            <a href="/z01" class="dropdown-link">Z01</a>
+            <a href="/zuca" class="dropdown-link">Zuca</a>
+          </div>
+        </div>
+      </div>
+      <a href="/insights">RESOURCES</a>
+      <a href="/about">ABOUT US</a>
+      <a href="/careers">CAREERS</a>
+      <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+    </div>
+
+    <div class="nav-action">
+      <a href="/contact" class="btn-primary desktop-only">
+        REQUEST DEMO
+        <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;">
+          <path d="M7 17L17 7M17 7H7M17 7V17" />
+        </svg>
+      </a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<section class="legal-hero">
+  <div class="hero-inner">
+    <span class="eyebrow">LEGAL</span>
+    <h1>Terms &amp; Conditions</h1>
+    <p>Please read these terms carefully before using Entwy's website, products, and services.</p>
+    <div class="last-updated">Last updated: September 2026</div>
+  </div>
+</section>
+
+<div class="legal-layout">
+  <aside class="toc" id="desktopToc">
+    <div class="toc-label">ON THIS PAGE</div>
+    <div class="toc-list" id="tocList">
+      <a href="#introduction">Introduction</a>
+      <a href="#acceptance">Acceptance of Terms</a>
+      <a href="#about-entwy">About Entwy</a>
+      <a href="#use-of-website">Use of Our Website</a>
+      <a href="#intellectual-property">Intellectual Property</a>
+      <a href="#services-engagements">Services and Engagements</a>
+      <a href="#user-responsibilities">User Responsibilities</a>
+      <a href="#third-party">Third-Party Links and Services</a>
+      <a href="#disclaimers">Disclaimers</a>
+      <a href="#limitation-liability">Limitation of Liability</a>
+      <a href="#indemnification">Indemnification</a>
+      <a href="#changes-to-terms">Changes to These Terms</a>
+      <a href="#governing-law">Governing Law</a>
+      <a href="#contact-us">Contact Us</a>
+    </div>
+  </aside>
+
+  <main class="legal-content">
+
+    <details class="mobile-toc">
+      <summary>On this page
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="mobile-toc-list">
+        <a href="#introduction">Introduction</a>
+        <a href="#acceptance">Acceptance of Terms</a>
+        <a href="#about-entwy">About Entwy</a>
+        <a href="#use-of-website">Use of Our Website</a>
+        <a href="#intellectual-property">Intellectual Property</a>
+        <a href="#services-engagements">Services and Engagements</a>
+        <a href="#user-responsibilities">User Responsibilities</a>
+        <a href="#third-party">Third-Party Links and Services</a>
+        <a href="#disclaimers">Disclaimers</a>
+        <a href="#limitation-liability">Limitation of Liability</a>
+        <a href="#indemnification">Indemnification</a>
+        <a href="#changes-to-terms">Changes to These Terms</a>
+        <a href="#governing-law">Governing Law</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+    </details>
+
+    <section id="introduction">
+      <h2>01. Introduction</h2>
+      <p>These Terms &amp; Conditions ("Terms") govern access to and use of the Entwy website, products, services, and related digital experiences (together, the "Services"). They set out the basis on which we make the Services available to you and what we ask of you in return.</p>
+      <p>By visiting our website or engaging with any part of the Services, you agree to be bound by these Terms. If you do not agree with any part of them, we ask that you discontinue use of the Services.</p>
+    </section>
+
+    <section id="acceptance">
+      <h2>02. Acceptance of Terms</h2>
+      <p>Accessing or using our website, in any form and on any device, constitutes your acceptance of these Terms in full. If you are using the Services on behalf of a company or organization, you confirm that you have the authority to bind that entity to these Terms.</p>
+      <p>We may update these Terms from time to time, and your continued use of the Services after changes are posted represents your acceptance of the revised Terms.</p>
+    </section>
+
+    <section id="about-entwy">
+      <h2>03. About Entwy</h2>
+      <p>Entwy is a product engineering and digital technology company. We work with startups, growing businesses, and enterprise organizations to design, build, and scale digital products — combining product design, full-stack engineering, AI integration, and digital transformation services under one team.</p>
+      <p>References to "Entwy," "we," "us," or "our" throughout these Terms refer to Entwy Digital Private Limited and its affiliates.</p>
+    </section>
+
+    <section id="use-of-website">
+      <h2>04. Use of Our Website</h2>
+      <p>You're welcome to browse our website, explore our work, and reach out to us for legitimate business purposes. In using the website, you agree not to:</p>
+      <ul>
+        <li>Interfere with the website's normal operation, security, or availability</li>
+        <li>Attempt to gain unauthorized access to any systems, accounts, or data connected to the website</li>
+        <li>Use automated tools to scrape, copy, or extract content without our permission</li>
+        <li>Use the website for any unlawful, misleading, or fraudulent purpose</li>
+        <li>Upload or transmit harmful code, malware, or disruptive material</li>
+      </ul>
+      <p>We reserve the right to restrict or suspend access to the website for anyone who violates these conditions.</p>
+    </section>
+
+    <section id="intellectual-property">
+      <h2>05. Intellectual Property</h2>
+      <p>All content on this website — including the Entwy name, logo, branding, page designs, graphics, text, illustrations, software, and underlying code — is owned by Entwy or licensed to us, and is protected under applicable intellectual property laws.</p>
+      <p>Nothing in these Terms grants you any right to use our branding, designs, or content for commercial purposes without our prior written consent. You may view and share content from the website for personal, non-commercial reference.</p>
+    </section>
+
+    <section id="services-engagements">
+      <h2>06. Services and Engagements</h2>
+      <p>This website provides general information about Entwy and our capabilities. Any specific client engagement — including scope, pricing, timelines, and deliverables — is governed by a separate agreement, statement of work, or contract entered into directly between Entwy and the client.</p>
+      <p>Where a conflict arises between these Terms and a signed client agreement, the terms of that specific agreement will take precedence for matters relating to the engagement in question.</p>
+    </section>
+
+    <section id="user-responsibilities">
+      <h2>07. User Responsibilities</h2>
+      <p>When you contact us, submit a form, or otherwise share information through our website, you agree to provide information that is accurate and not misleading. You're responsible for keeping any account or contact details you share with us up to date.</p>
+      <p>You also agree to use the website in a manner consistent with applicable laws and in good faith, and not in a way that could harm Entwy, our clients, or other visitors to the website.</p>
+    </section>
+
+    <section id="third-party">
+      <h2>08. Third-Party Links and Services</h2>
+      <p>Our website may reference or link to third-party websites, tools, or services — for example, portfolio platforms, scheduling tools, or partner sites. These are provided for convenience only.</p>
+      <p>Entwy does not control and is not responsible for the content, accuracy, or privacy practices of third-party websites or services. Visiting a linked site is done at your own discretion, and we recommend reviewing that site's own terms and privacy policy.</p>
+    </section>
+
+    <section id="disclaimers">
+      <h2>09. Disclaimers</h2>
+      <p>We take reasonable care to keep the information on our website accurate and up to date, but we make no guarantees that the website will be error-free, uninterrupted, or entirely free of technical issues at all times.</p>
+      <p>The website and its content are provided on an "as is" and "as available" basis. To the extent permitted by law, Entwy disclaims implied warranties regarding the website's fitness for a particular purpose beyond what is expressly stated here.</p>
+    </section>
+
+    <section id="limitation-liability">
+      <h2>10. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, Entwy shall not be liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, the website or its content.</p>
+      <p>This limitation does not apply to obligations set out in a separate signed client agreement, statement of work, or contract, which will govern liability for the corresponding engagement.</p>
+      <div class="callout">
+        <span class="callout-label">IMPORTANT</span>
+        <p>This section limits general liability related to website use. It does not override protections or obligations agreed to in a specific client contract.</p>
+      </div>
+    </section>
+
+    <section id="indemnification">
+      <h2>11. Indemnification</h2>
+      <p>You agree to indemnify and hold Entwy, its employees, and affiliates harmless from any claims, damages, or expenses (including reasonable legal fees) arising from your misuse of the website, violation of these Terms, or infringement of any third-party rights.</p>
+    </section>
+
+    <section id="changes-to-terms">
+      <h2>12. Changes to These Terms</h2>
+      <p>We may revise these Terms from time to time to reflect changes in our services, legal requirements, or business practices. When we make material changes, we'll update the "Last updated" date at the top of this page.</p>
+      <p>We encourage you to review this page periodically so you're aware of the current Terms governing your use of the website.</p>
+    </section>
+
+    <section id="governing-law">
+      <h2>13. Governing Law</h2>
+      <p>These Terms are governed by the applicable laws of the jurisdiction in which Entwy operates, unless otherwise specified in a written agreement between you and Entwy.</p>
+    </section>
+
+    <section id="contact-us">
+      <h2>14. Contact Us</h2>
+      <p>If you have any questions about these Terms &amp; Conditions, we're happy to help.</p>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2V6z"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px;color:var(--gray);margin-bottom:2px;">Email us at</div>
+          <a href="mailto:info@entwy.com">info@entwy.com</a>
+        </div>
+      </div>
+      <p class="draft-note">This page contains placeholder legal content prepared for design purposes and should be reviewed by qualified legal counsel before publication.</p>
+    </section>
+
+    <div class="related-section">
+      <h3>Related</h3>
+      <div class="related-grid">
+        <a href="/privacy-policy" class="related-card">Privacy Policy
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+        </a>
+        <a href="/contact" class="related-card">Contact Us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<section class="cta-section">
+  <div class="cta-inner">
+    <span class="eyebrow">LET'S BUILD</span>
+    <h2>Let's build what's next.</h2>
+    <p>Have a question about our services, policies, or how we work? We'd love to hear from you.</p>
+    <div class="cta-buttons">
+      <a href="/contact" class="btn btn-primary">Start a Conversation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </a>
+      <a href="/contact" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-wrapper">
+          <img
+            src="/images/entwy-icon.png"
+            alt="Entwy Logo" class="footer-logo">
+          <span class="footer-logo-text">ENTWY</span>
+        </div>
+        <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4>COMPANY</h4>
+        </div>
+        <a href="/about">About Us</a>
+        <a href="/insights">Research Insights</a>
+        <a href="/careers">Careers</a>
+        <a href="/faq">FAQ</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4>PRODUCTS</h4>
+        </div>
+        <a href="/product">Huzzler</a>
+        <a href="/wiviy">Wiviy</a>
+        <a href="/rentit">Rentit</a>
+        <a href="/products/mungo">Mungo</a>
+        <a href="/z01">Z01</a>
+        <a href="/zuca">Zuca</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4>INDUSTRIES</h4>
+        </div>
+        <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp; Scalable Platforms</a>
+        <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+        <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+        <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+        <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+        <a href="/industries/banking-investment">Banking &amp; Investment</a>
+        <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+        <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4>RESOURCES</h4>
+        </div>
+        <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+        <a href="/entwy-product-design-residency">Product Design Residency</a>
+        <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX 26 Competition</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions" class="active" style="color: var(--primary);">Terms and Conditions</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+        </div>
+        <p class="hq-label">SOUTH ASIA HQ</p>
+        <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564 58490</a></p>
+        <p class="email"><a href="mailto:info@entwy.com" style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+        <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi, Chennai - 600096</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-header">
+          <span class="col-indicator"></span>
+          <h4 class="invisible">LOCATION</h4>
+        </div>
+        <p class="subtitle">NORTH AMERICA</p>
+        <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+          rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer"
+          class="social-btn" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+          aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer"
+          class="social-btn" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+          aria-label="Pinterest">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+      <div class="copyright">
+        © 2026 Entwy Digital Private Limited. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('mobile-active');
+    navLinks.classList.toggle('active');
+  }
+
+  // Support click toggle on PRODUCTS dropdown
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = trigger.closest('.nav-item-dropdown');
+      if (parent) {
+        parent.classList.toggle('dropdown-open');
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item-dropdown')) {
+      document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+    }
+  });
+
+  // Scrollspy for desktop TOC
+  const tocLinks = Array.from(document.querySelectorAll('#tocList a'));
+  const sections = tocLinks.map(link => document.querySelector(link.getAttribute('href')));
+
+  const setActive = () => {
+    let currentIndex = 0;
+    const scrollPos = window.scrollY + 140;
+    sections.forEach((sec, i) => {
+      if (sec && sec.offsetTop <= scrollPos) currentIndex = i;
+    });
+    tocLinks.forEach((link, i) => link.classList.toggle('active', i === currentIndex));
+  };
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+
+  // Close mobile TOC accordion after selecting a section
+  document.querySelectorAll('.mobile-toc-list a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.querySelector('.mobile-toc').removeAttribute('open');
+    });
+  });
+</script>
+
+</body>
+</html>

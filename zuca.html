@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuca by Entwy | Consumer App</title>
+  <meta name="description"
+    content="Zuca is Entwy's consumer app designed for a simple, intuitive experience. Discover what Zuca offers today.">
+  <meta property="og:title" content="Zuca by Entwy | Consumer App">
+  <meta property="og:description" content="Zuca is Entwy's consumer app designed for a simple, intuitive experience. Discover what Zuca offers today.">
+  <meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+  <meta property="og:url" content="https://entwy.com/zuca">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zuca by Entwy | Consumer App">
+  <meta name="twitter:description" content="Zuca is Entwy's consumer app designed for a simple, intuitive experience. Discover what Zuca offers today.">
+  <meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+  <link rel="canonical" href="https://entwy.com/zuca">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="zuca-page">
+  <div class="content-wrapper">
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <div class="header-wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/" class="logo-icon">
+            <img src="/images/entwy-logo.png" alt="Entwy Logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/">ENTERPRISE</a>
+          <div class="nav-item-dropdown">
+            <a href="/product" class="nav-dropdown-trigger active">
+              PRODUCTS
+              <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-heading">PRODUCTS</div>
+              <div class="dropdown-list">
+                <a href="/product" class="dropdown-link">Huzzler</a>
+                <a href="/wiviy" class="dropdown-link">Wiviy</a>
+                <a href="/rentit" class="dropdown-link">Rentit</a>
+                <a href="/products/mungo" class="dropdown-link">Mungo</a>
+                <a href="/z01" class="dropdown-link">Z01</a>
+                <a href="/zuca" class="dropdown-link active">Zuca</a>
+              </div>
+            </div>
+          </div>
+          <a href="/insights">RESOURCES</a>
+          <a href="/about">ABOUT US</a>
+          <a href="/careers">CAREERS</a>
+          <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+        </div>
+
+        <div class="nav-action">
+          <a href="/contact" class="btn-primary desktop-only">
+            REQUEST DEMO
+            <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+      <!-- ============ SECTION 1: ZUCA HERO / CASE STUDY ============ -->
+      <section class="zuca-hero-section" id="zuca-hero">
+        <div class="zuca-hero-container">
+          <!-- Left Column Content (616 × 632.1 Hug) -->
+          <div class="zuca-hero-left">
+            <!-- Case Study Pill -->
+            <div class="zuca-case-badge">
+              <span class="zuca-badge-dot"></span>
+              CASE STUDY
+            </div>
+
+            <!-- Headline with leaf icon -->
+            <h1 class="zuca-hero-title">
+              Sustainability<br>
+              <span class="zuca-title-highlight">insights,<svg class="zuca-title-leaf" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z" />
+                </svg></span><br>
+              built for<br>
+              business
+            </h1>
+
+            <!-- Underline accent bar -->
+            <span class="zuca-accent-line"></span>
+
+            <!-- Subtitle -->
+            <p class="zuca-hero-subtitle">
+              Make data-driven decisions, reduce impact, and build a better tomorrow.
+            </p>
+
+            <!-- 3 Feature Boxes -->
+            <div class="zuca-features-row">
+              <!-- Box 1 -->
+              <div class="zuca-feat-box">
+                <div class="zuca-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="zuca-feat-label">
+                  Smarter<br>Decisions
+                </div>
+              </div>
+
+              <!-- Box 2 -->
+              <div class="zuca-feat-box">
+                <div class="zuca-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="zuca-feat-label">
+                  Measurable<br>Impact
+                </div>
+              </div>
+
+              <!-- Box 3 -->
+              <div class="zuca-feat-box">
+                <div class="zuca-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="zuca-feat-label">
+                  Stronger<br>Compliance
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 2: OUR VISION / THE CHALLENGE ============ -->
+      <section class="zuca-vision-section" id="zuca-vision">
+        <div class="zuca-vision-container">
+
+          <!-- Left Column -->
+          <div class="zuca-vision-left">
+            <!-- Eyebrow Tag -->
+            <div class="zuca-challenge-tag">
+              <span class="zuca-challenge-num">01</span>
+              <span class="zuca-challenge-label">THE CHALLENGE</span>
+              <span class="zuca-challenge-line"></span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="zuca-vision-title">
+              Finding reliable<br>
+              service<br>
+              professionals can be<br>
+              <span class="zuca-vision-highlight">frustrating.</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="zuca-challenge-desc">
+              Many existing platforms make it difficult to quickly discover trusted providers, understand service
+              pricing, or confirm availability.
+            </p>
+
+            <!-- 3 Challenge Cards -->
+            <div class="zuca-challenge-cards">
+              <!-- Card 1 -->
+              <div class="zuca-ccard">
+                <div class="zuca-ccard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6BFF" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <span class="zuca-ccard-badge">01</span>
+                <h4 class="zuca-ccard-title">Hard to Find</h4>
+                <p class="zuca-ccard-text">Time-consuming to search and compare trusted professionals.</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="zuca-ccard">
+                <div class="zuca-ccard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6BFF" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <span class="zuca-ccard-badge">02</span>
+                <h4 class="zuca-ccard-title">Unclear Availability</h4>
+                <p class="zuca-ccard-text">Real-time availability is often missing or unreliable.</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="zuca-ccard">
+                <div class="zuca-ccard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6BFF" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                  </svg>
+                </div>
+                <span class="zuca-ccard-badge">03</span>
+                <h4 class="zuca-ccard-title">Confusing Pricing</h4>
+                <p class="zuca-ccard-text">Service pricing is unclear or hidden until the last step.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Floating Doorstep Card Overlay -->
+          <div class="zuca-vision-right">
+            <div class="zuca-doorstep-card">
+              <div class="zuca-doorstep-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F6BFF" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </div>
+              <div class="zuca-doorstep-info">
+                <h4 class="zuca-doorstep-title">Beauty services at your doorstep</h4>
+                <p class="zuca-doorstep-text">Connect with verified professionals for makeup, hair, spa, and more –
+                  anytime, anywhere.</p>
+              </div>
+              <div class="zuca-doorstep-arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F6BFF" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ SECTION 3: BOOK TRUSTED PROS BANNER SHOWCASE ============ -->
+      <section class="zuca-showcase-section" id="zuca-showcase">
+        <div class="zuca-showcase-container">
+          <!-- Left Column: Vision Statement -->
+          <div class="zuca-showcase-left">
+            <div class="zuca-showcase-pill">
+              <span class="zuca-vision-icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </span>
+              <span class="zuca-vision-label">Our vision</span>
+            </div>
+
+            <h2 class="zuca-showcase-title">
+              Aetherfield helps<br>
+              organizations<br>
+              measure, model,<br>
+              and act on<br>
+              <span class="zuca-showcase-highlight">sustainability.</span>
+            </h2>
+
+            <span class="zuca-showcase-accent"></span>
+
+            <!-- 3 Feature Cards -->
+            <div class="zuca-showcase-cards">
+              <div class="zuca-scard">
+                <div class="zuca-scard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                  </svg>
+                </div>
+                <div class="zuca-scard-label">Data-Driven<br>Insights</div>
+              </div>
+
+              <div class="zuca-scard">
+                <div class="zuca-scard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="14" width="4" height="7" rx="1"></rect>
+                    <rect x="10" y="9" width="4" height="12" rx="1"></rect>
+                    <rect x="17" y="4" width="4" height="17" rx="1"></rect>
+                  </svg>
+                </div>
+                <div class="zuca-scard-label">Measurable<br>Impact</div>
+              </div>
+
+              <div class="zuca-scard">
+                <div class="zuca-scard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="zuca-scard-label">Stronger<br>Decisions</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Spacer (Right side artwork displays cleanly from background) -->
+          <div class="zuca-showcase-right-spacer" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 4: SERVICE BOOKING BENTO GRID ============ -->
+      <section class="zuca-bento-section" id="zuca-bento">
+        <div class="zuca-bento-container">
+
+          <!-- Floating 3D Noodle Element connecting Section 3 & Section 4 -->
+          <div class="zuca-noodle-bridge" aria-hidden="true">
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787310275/e3b98d3392d977e6aa4a5cbe801c49dd4ce30fdf_nnxgkt.png"
+              alt="" class="zuca-noodle-img" loading="lazy" />
+          </div>
+
+          <div class="zuca-bento-canvas">
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787551078/0319a5abb386c7de101bb929507ae6b5d9c9c20a_js9e4d.png"
+              alt="Service Booking App Bento Grid Features" class="zuca-bento-bg" />
+
+            <!-- Card 1: Service Booking App (Top Left) -->
+            <div class="zuca-bento-item zuca-bitem-service">
+              <div class="zuca-badge-ondemand">
+                <span class="zuca-ondemand-icon">✦</span> On-Demand
+              </div>
+              <h3 class="zuca-bitem-title zuca-title-lg">
+                Service<br>Booking<br><span class="zuca-accent-blue">App</span>
+              </h3>
+              <p class="zuca-bitem-desc">
+                A mobile platform that lets you discover and book trusted beauty, wellness, and fitness professionals
+                easily — compare providers and schedule appointments in just a few taps.
+              </p>
+              <div class="zuca-pill-grid">
+                <div class="zuca-bpill">
+                  <svg class="zuca-bpill-icon" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                  <span>Instant<br>Booking</span>
+                </div>
+                <div class="zuca-bpill">
+                  <svg class="zuca-bpill-icon" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                  <span>Verified<br>Professionals</span>
+                </div>
+                <div class="zuca-bpill">
+                  <svg class="zuca-bpill-icon" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Real-time<br>Confirmation</span>
+                </div>
+                <div class="zuca-bpill">
+                  <svg class="zuca-bpill-icon" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>Secure<br>Payments</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Men's Hair Styling (Top Middle) -->
+            <div class="zuca-bento-item zuca-bitem-hair">
+              <h3 class="zuca-bitem-title">
+                Men's Hair<br><span class="zuca-accent-orange">Styling</span>
+              </h3>
+              <p class="zuca-bitem-desc">
+                Book skilled barbers and hairstylists for modern cuts, fades, trims, and beard grooming — for a clean,
+                confident look every time.
+              </p>
+            </div>
+
+            <!-- Card 3: Instant Booking (Top Right Upper) -->
+            <div class="zuca-bento-item zuca-bitem-instant">
+              <div class="zuca-circle-icon zuca-circle-green">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="zuca-bitem-sm-title">Instant Booking</h3>
+              <p class="zuca-bitem-desc">
+                Book your favorite service professionals anytime, anywhere in seconds.
+              </p>
+            </div>
+
+            <!-- Card 4: Real-time Confirmation (Top Right Lower) -->
+            <div class="zuca-bento-item zuca-bitem-realtime">
+              <div class="zuca-circle-icon zuca-circle-purple">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <h3 class="zuca-bitem-sm-title">
+                Real-time<br>Confirmation
+              </h3>
+              <p class="zuca-bitem-desc">
+                Receive immediate confirmation and live updates when your booking is accepted.
+              </p>
+            </div>
+
+            <!-- Card 5: About the Application (Bottom Left) -->
+            <div class="zuca-bento-item zuca-bitem-about">
+              <h3 class="zuca-bitem-title">
+                About the<br>Application
+              </h3>
+              <p class="zuca-bitem-desc">
+                Our platform bridges the gap between premium service providers and clients through a seamless interface
+                that prioritizes convenience, verification, and user experience — helping you discover trusted
+                professionals, explore services, and book appointments quickly and easily.
+              </p>
+            </div>
+
+            <!-- Card 6: Verified Professional (Bottom Middle) -->
+            <div class="zuca-bento-item zuca-bitem-verified">
+              <p class="zuca-bitem-desc">
+                Verified professionals ensure users can book services with confidence and trust.
+              </p>
+              <div class="zuca-arrow-btn">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Card 7: Trusted Service Network (Bottom Right) -->
+            <div class="zuca-bento-item zuca-bitem-network">
+              <h3 class="zuca-bitem-title">
+                Trusted<br>Service<br><span class="zuca-accent-pink">Network</span>
+              </h3>
+              <p class="zuca-bitem-desc">
+                Connecting users with verified professionals across multiple service categories for seamless booking
+                experiences.
+              </p>
+              <div class="zuca-dot-grid" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 5: BOOK NOW 3D SHOWCASE ============ -->
+      <section class="zuca-booknow-section" id="zuca-booknow">
+        <div class="zuca-booknow-container">
+          <div class="zuca-booknow-canvas">
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787551547/ChatGPT_Image_Aug_24_2026_11_35_21_AM_fgisi6.png"
+              alt="Zuca Mobile Experience - Book Now" class="zuca-booknow-bg" loading="lazy" />
+
+            <!-- Book Now Overlay Content -->
+            <div class="zuca-booknow-content">
+              <h2 class="zuca-booknow-title">
+                <span class="zuca-bn-dark">BOOK</span><br />
+                <span class="zuca-bn-blue">NOW</span>
+              </h2>
+              <p class="zuca-booknow-subtitle">
+                Your beauty &amp; wellness<br />services, just a tap away.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 6: PROFESSIONAL PROFILES & REVIEWS ============ -->
+      <section class="zuca-reviews-section" id="zuca-reviews">
+        <div class="zuca-reviews-container">
+          <div class="zuca-reviews-canvas">
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787558679/65f2e9244070d5985c8e274b05dcbe192114caa4_1_1_oon1id.png"
+              alt="Professional Profiles and Verified Reviews" class="zuca-reviews-bg" loading="lazy" />
+
+            <!-- Reviews Content Overlay -->
+            <div class="zuca-reviews-content">
+              <h2 class="zuca-reviews-title">
+                Professional<br />
+                Profiles &amp; <span class="zuca-accent-blue">Reviews</span>
+              </h2>
+              <div class="zuca-reviews-bar" aria-hidden="true"></div>
+              <p class="zuca-reviews-desc">
+                Explore detailed provider profiles, <span class="zuca-link-text">check ratings</span>, and read reviews
+                before booking.
+              </p>
+              <p class="zuca-reviews-subdesc">
+                This helps you make informed <span class="zuca-link-text">decisions</span> and choose professionals you
+                can trust.
+              </p>
+
+              <!-- 3 Feature Badges -->
+              <div class="zuca-reviews-badges">
+                <div class="zuca-rbadge">
+                  <div class="zuca-rbadge-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <span>Verified<br />Professionals</span>
+                </div>
+                <div class="zuca-rbadge">
+                  <div class="zuca-rbadge-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                      </polygon>
+                    </svg>
+                  </div>
+                  <span>Real<br />Reviews</span>
+                </div>
+                <div class="zuca-rbadge">
+                  <div class="zuca-rbadge-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <span>Trusted<br />&amp; Secure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+              <img src="/images/entwy-icon.png" alt="Entwy Logo" class="footer-logo">
+              <span class="footer-logo-text">ENTWY</span>
+            </div>
+            <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>COMPANY</h4>
+            </div>
+            <a href="/about">About Us</a>
+            <a href="/insights">Research Insights</a>
+            <a href="/careers">Careers</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>PRODUCTS</h4>
+            </div>
+            <a href="/product">Huzzler</a>
+            <a href="/wiviy">Wiviy</a>
+            <a href="/rentit">Rentit</a>
+            <a href="/products/mungo">Mungo</a>
+            <a href="/z01">Z01</a>
+            <a href="/zuca">Zuca</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>INDUSTRIES</h4>
+            </div>
+            <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp; Scalable
+              Platforms</a>
+            <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+            <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+            <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+            <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+            <a href="/industries/banking-investment">Banking &amp; Investment</a>
+            <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+            <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>RESOURCES</h4>
+            </div>
+            <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+            <a href="/entwy-product-design-residency">Product Design Residency</a>
+            <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX
+              26 Competition</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+            </div>
+            <p class="hq-label">SOUTH ASIA HQ</p>
+            <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564
+                58490</a></p>
+            <p class="email"><a href="mailto:info@entwy.com"
+                style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+            <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi,
+              Chennai - 600096</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4 class="invisible">LOCATION</h4>
+            </div>
+            <p class="subtitle">NORTH AMERICA</p>
+            <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+              rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <div class="copyright">
+            © 2026 Entwy Digital Private Limited. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('mobile-active');
+        navLinks.classList.toggle('active');
+      }
+    }
+
+    // Support click toggle on PRODUCTS dropdown
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = trigger.closest('.nav-item-dropdown');
+        if (parent) {
+          parent.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Entwy AI & Digital Product Studio</title>
+  <meta name="description"
+    content="Find answers to common questions about Entwy's AI systems, product design services, residencies, and how to get started working with us.">
+  <meta property="og:title" content="FAQ | Entwy AI & Digital Product Studio">
+  <meta property="og:description" content="Find answers to common questions about Entwy's AI systems, product design services, residencies, and how to get started working with us.">
+  <meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+  <meta property="og:url" content="https://entwy.com/faq">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ | Entwy AI & Digital Product Studio">
+  <meta name="twitter:description" content="Find answers to common questions about Entwy's AI systems, product design services, residencies, and how to get started working with us.">
+  <meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+  <link rel="canonical" href="https://entwy.com/faq">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="faq-page">
+  <div class="content-wrapper" style="position: relative; background: white;">
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <div class="header-wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/" class="logo-icon">
+            <img
+              src="/images/entwy-logo.png"
+              alt="Entwy Logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/">ENTERPRISE</a>
+          <div class="nav-item-dropdown">
+            <a href="/product" class="nav-dropdown-trigger">
+              PRODUCTS
+              <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-heading">PRODUCTS</div>
+              <div class="dropdown-list">
+                <a href="/product" class="dropdown-link">Huzzler</a>
+                <a href="/wiviy" class="dropdown-link">Wiviy</a>
+                <a href="/rentit" class="dropdown-link">Rentit</a>
+                <a href="/products/mungo" class="dropdown-link">Mungo</a>
+                <a href="/z01" class="dropdown-link">Z01</a>
+                <a href="/zuca" class="dropdown-link">Zuca</a>
+              </div>
+            </div>
+          </div>
+          <a href="/insights">RESOURCES</a>
+          <a href="/about">ABOUT US</a>
+          <a href="/careers">CAREERS</a>
+          <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+        </div>
+
+        <div class="nav-action">
+          <a href="/contact" class="btn-primary desktop-only">
+            REQUEST DEMO
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="faq-hero">
+      <div class="orb-1"></div>
+      <div class="orb-2"></div>
+      <div class="faq-hero-inner">
+        <p class="faq-eyebrow">RESOURCES &amp; SUPPORT</p>
+        <h1 class="faq-hero-title">Questions? We've got <span class="accent">answers.</span></h1>
+        <p class="faq-hero-sub">Explore answers about our services, product development process, AI capabilities,
+          technology, industries, and how we work with teams.</p>
+
+        <div class="faq-search-wrap">
+          <div class="faq-search-field">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" id="faqSearch" placeholder="Search questions, topics, or keywords..." autocomplete="off">
+            <span class="faq-kbd-hint">⌘K</span>
+          </div>
+          <div class="faq-search-results" id="searchResults"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POPULAR QUESTIONS ============ -->
+    <section class="faq-popular">
+      <div class="faq-wrap">
+        <div class="faq-section-head">
+          <p class="faq-eyebrow">QUICK ANSWERS</p>
+          <h2>Popular questions</h2>
+        </div>
+        <div class="faq-popular-grid">
+          <button class="pop-card" data-jump="q-about-different">
+            <span class="q">How does Entwy work with new product ideas?</span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.4">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <button class="pop-card" data-jump="q-services-what">
+            <span class="q">What services does Entwy provide?</span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.4">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <button class="pop-card" data-jump="q-eng-existing">
+            <span class="q">Can Entwy work with our existing engineering team?</span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.4">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <button class="pop-card" data-jump="q-ai-how">
+            <span class="q">How does AI fit into Entwy's product development process?</span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.4">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORY CHIP NAV (MOBILE / TABLET) ============ -->
+    <section class="cat-scroll">
+      <div class="faq-wrap">
+        <div class="cat-scroll-inner" id="catScroll">
+          <button class="cat-chip active" data-cat="all">All Questions</button>
+          <button class="cat-chip" data-cat="about">About Entwy</button>
+          <button class="cat-chip" data-cat="services">Services</button>
+          <button class="cat-chip" data-cat="ai">AI &amp; Technology</button>
+          <button class="cat-chip" data-cat="product">Product Development</button>
+          <button class="cat-chip" data-cat="design">Design &amp; UX</button>
+          <button class="cat-chip" data-cat="engineering">Engineering</button>
+          <button class="cat-chip" data-cat="systems">Systems Integration</button>
+          <button class="cat-chip" data-cat="industries">Industries</button>
+          <button class="cat-chip" data-cat="working">Working With Entwy</button>
+          <button class="cat-chip" data-cat="projects">Projects &amp; Engagement</button>
+          <button class="cat-chip" data-cat="support">Support</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MAIN FAQ ============ -->
+    <section class="faq-main">
+      <div class="faq-wrap">
+        <div class="faq-layout">
+
+          <!-- LEFT SIDEBAR -->
+          <aside class="faq-sidebar">
+            <div class="faq-sidebar-list" id="sidebarList">
+              <button class="active" data-cat="all"><span class="dot"></span>All Questions</button>
+              <button data-cat="about"><span class="dot"></span>About Entwy</button>
+              <button data-cat="services"><span class="dot"></span>Services</button>
+              <button data-cat="ai"><span class="dot"></span>AI &amp; Technology</button>
+              <button data-cat="product"><span class="dot"></span>Product Development</button>
+              <button data-cat="design"><span class="dot"></span>Design &amp; UX</button>
+              <button data-cat="engineering"><span class="dot"></span>Engineering</button>
+              <button data-cat="systems"><span class="dot"></span>Systems Integration</button>
+              <button data-cat="industries"><span class="dot"></span>Industries</button>
+              <button data-cat="working"><span class="dot"></span>Working With Entwy</button>
+              <button data-cat="projects"><span class="dot"></span>Projects &amp; Engagement</button>
+              <button data-cat="support"><span class="dot"></span>Support</button>
+            </div>
+          </aside>
+
+          <!-- RIGHT ACCORDION CONTENT -->
+          <div class="faq-content" id="faqContent">
+
+            <!-- 01 ABOUT ENTWY -->
+            <div class="faq-category-block" data-block="about" id="cat-about">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">ABOUT ENTWY</p>
+                <h2>About Entwy</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-about-what">
+                  <button class="accordion-trigger">
+                    <span>What is Entwy?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy is a design-led product engineering company that combines product strategy, experience
+                      design, engineering, AI, and systems integration to help businesses create intelligent digital
+                      products.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-about-who">
+                  <button class="accordion-trigger">
+                    <span>Who does Entwy work with?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy works with startups, SaaS companies, enterprises, and global brands that need help
+                      designing, building, modernizing, or scaling digital products and technology systems.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-about-different">
+                  <button class="accordion-trigger">
+                    <span>What makes Entwy different from a traditional software development company?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy brings product design, engineering, and AI together as one connected team, reducing handoffs
+                      between strategy, design, development, and technology implementation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-about-where">
+                  <button class="accordion-trigger">
+                    <span>Where does Entwy operate?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy works with organizations across global markets, with our South Asia HQ in Chennai, India and
+                      North America office in Brooklyn, New York, supporting distributed teams worldwide.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 SERVICES -->
+            <div class="faq-category-block" data-block="services" id="cat-services">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">SERVICES</p>
+                <h2>Our services</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-services-what">
+                  <button class="accordion-trigger">
+                    <span>What services does Entwy provide?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy provides four core services: Enterprise-Grade AI Product &amp; Application Development,
+                      AI-First Experience Design &amp; Intelligent UI/UX Systems, Scalable AI Platform &amp; Web
+                      Engineering Infrastructure, and AI-Centric Systems Integration &amp; Intelligent Architecture.
+                      <div class="tag-list">
+                        <span>AI Product Development</span>
+                        <span>Experience Design</span>
+                        <span>Platform Engineering</span>
+                        <span>Systems Integration</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-services-entire">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy design and build an entire product?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy can support the product journey from discovery and strategy through UX/UI design,
+                      engineering, AI integration, launch, and ongoing evolution.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-services-design-only">
+                  <button class="accordion-trigger">
+                    <span>Can I hire Entwy for only design?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy can support individual design engagements, including UI/UX redesigns, brand systems,
+                      and product prototypes, as well as complete product development programs.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-services-existing">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy help with an existing product?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy can work with existing products, platforms, systems, and engineering teams to improve
+                      experiences, modernize architecture, add AI capabilities, or scale performance.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 AI & TECHNOLOGY -->
+            <div class="faq-category-block" data-block="ai" id="cat-ai">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">AI &amp; TECHNOLOGY</p>
+                <h2>AI, built into the product</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-ai-how">
+                  <button class="accordion-trigger">
+                    <span>How does Entwy use AI?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy integrates AI where it creates measurable business value, including intelligent interfaces,
+                      assistants, semantic search, workflow automation, personalization, analytics, and decision-support
+                      systems.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-ai-custom">
+                  <button class="accordion-trigger">
+                    <span>Does Entwy build custom AI applications?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy designs and engineers tailored AI-enabled applications around specific workflows, user
+                      behaviors, internal data pipelines, and security requirements.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-ai-add-existing">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy add AI to an existing application?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We assess existing tech stacks for high-impact AI opportunities including LLM integrations,
+                      search, automation, recommendation systems, and document processing.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-ai-genai-only">
+                  <button class="accordion-trigger">
+                    <span>Does Entwy only work with generative AI?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      No. We utilize generative AI, traditional machine learning models, intelligent automation,
+                      predictive analytics, and computer vision depending on what solves the problem best.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-ai-responsible">
+                  <button class="accordion-trigger">
+                    <span>How does Entwy approach responsible AI?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Every AI solution is built with strict standards around data privacy, enterprise security,
+                      reliability, guardrails, human-in-the-loop oversight, and compliance.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 PRODUCT DEVELOPMENT -->
+            <div class="faq-category-block" data-block="product" id="cat-product">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">PRODUCT DEVELOPMENT</p>
+                <h2>From idea to product</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-product-mvp">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy help turn an idea into an MVP?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy defines product scope, designs intuitive UX, engineers the foundational application,
+                      and establishes scalable infrastructure ready for market validation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-product-process">
+                  <button class="accordion-trigger">
+                    <span>What does the product development process look like?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      A connected sequence from first idea to a live, scaled product:
+                      <div class="process-flow">
+                        <span class="step">DISCOVER</span><span class="sep">→</span>
+                        <span class="step">DEFINE</span><span class="sep">→</span>
+                        <span class="step">DESIGN</span><span class="sep">→</span>
+                        <span class="step">ENGINEER</span><span class="sep">→</span>
+                        <span class="step">INTEGRATE</span><span class="sep">→</span>
+                        <span class="step">LAUNCH</span><span class="sep">→</span>
+                        <span class="step">SCALE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-product-timeline">
+                  <button class="accordion-trigger">
+                    <span>How long does product development take?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Timelines range from 4–8 weeks for focused MVPs to multi-quarter programs for complex enterprise
+                      platforms, tailored around clear milestones and sprint cadences.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-product-scale-mvp">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy help scale an existing MVP?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. Entwy refactors architectures, optimizes performance, builds design systems, connects
+                      enterprise integrations, and adds intelligent features as user demand surges.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 DESIGN & UX -->
+            <div class="faq-category-block" data-block="design" id="cat-design">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">DESIGN &amp; UX</p>
+                <h2>Design that meets intelligence</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-design-aifirst">
+                  <button class="accordion-trigger">
+                    <span>What does Entwy mean by AI-first experience design?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      AI-first design considers intelligent behavior, dynamic feedback, and context-awareness as part of
+                      the core experience from day one rather than an isolated plugin.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-design-services">
+                  <button class="accordion-trigger">
+                    <span>What design services does Entwy provide?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      A comprehensive suite of product design capabilities:
+                      <div class="tag-list">
+                        <span>UX Research</span>
+                        <span>Product Strategy</span>
+                        <span>User Journeys</span>
+                        <span>UI Design</span>
+                        <span>Design Systems</span>
+                        <span>Prototyping</span>
+                        <span>AI Interaction Design</span>
+                        <span>Intelligent UI/UX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-design-systems">
+                  <button class="accordion-trigger">
+                    <span>Does Entwy create design systems?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We build tokenized, reusable component libraries in Figma and code that ensure visual
+                      consistency and fast development across web and mobile platforms.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 ENGINEERING -->
+            <div class="faq-category-block" data-block="engineering" id="cat-engineering">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">ENGINEERING</p>
+                <h2>Engineering for scale</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-eng-tech">
+                  <button class="accordion-trigger">
+                    <span>What technologies does Entwy use?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      We leverage modern full-stack technologies including TypeScript, React, Next.js, Node.js, Python,
+                      Go, cloud providers (AWS, GCP, Azure), vector databases, and containerized microservices.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-eng-existing">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy work with our existing technology stack?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We seamlessly plug into existing tech stacks, CI/CD pipelines, repository workflows, and
+                      engineering teams without causing friction.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-eng-enterprise">
+                  <button class="accordion-trigger">
+                    <span>Does Entwy build enterprise applications?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We build high-throughput, secure, and resilient enterprise platforms equipped with role-based
+                      access control, SOC2 compliance standards, and automated monitoring.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-eng-legacy">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy modernize legacy systems?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We modernize legacy applications incrementally using strangler patterns, modular APIs, and
+                      modern frontend interfaces to avoid operational downtime.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 07 SYSTEMS INTEGRATION -->
+            <div class="faq-category-block" data-block="systems" id="cat-systems">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">SYSTEMS INTEGRATION</p>
+                <h2>Connect everything</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-sys-mean">
+                  <button class="accordion-trigger">
+                    <span>What does systems integration mean at Entwy?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Entwy connects siloed platforms, APIs, ERP/CRM systems, external data feeds, and AI models into a
+                      unified, synchronized technology ecosystem.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-sys-enterprise">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy integrate with enterprise systems?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We have experience integrating with Salesforce, SAP, HubSpot, Stripe, Workday, custom legacy
+                      databases, and proprietary enterprise endpoints.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-sys-ai-connect">
+                  <button class="accordion-trigger">
+                    <span>Can Entwy connect AI to existing systems?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We build secure middleware pipelines that allow AI models to safely query internal knowledge
+                      bases and trigger business actions across existing software tools.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 08 INDUSTRIES -->
+            <div class="faq-category-block" data-block="industries" id="cat-industries">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">INDUSTRIES</p>
+                <h2>Industry experience</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-ind-serve">
+                  <button class="accordion-trigger">
+                    <span>What industries does Entwy serve?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      We partner with businesses across diverse verticals:
+                      <div class="tag-list">
+                        <span>FinTech &amp; Banking</span>
+                        <span>HealthTech &amp; Wellness</span>
+                        <span>E-Commerce &amp; Retail</span>
+                        <span>Logistics &amp; Supply Chain</span>
+                        <span>SaaS Platforms</span>
+                        <span>Enterprise Operations</span>
+                        <span>EdTech</span>
+                        <span>Real Estate</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-ind-regulated">
+                  <button class="accordion-trigger">
+                    <span>Do you work with regulated industries?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We architect systems adhering to industry regulations such as HIPAA, GDPR, PCI-DSS, and SOC2
+                      compliance to ensure complete data integrity.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 09 WORKING WITH ENTWY -->
+            <div class="faq-category-block" data-block="working" id="cat-working">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">WORKING WITH ENTWY</p>
+                <h2>Partnership &amp; collaboration</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-work-begin">
+                  <button class="accordion-trigger">
+                    <span>How do engagements begin?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Engagements start with an initial discovery session to explore goals, technical constraints, and
+                      timelines, followed by a detailed roadmap and resource proposal.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-work-ip">
+                  <button class="accordion-trigger">
+                    <span>Who owns the intellectual property (IP)?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      You own 100% of all intellectual property, source code, designs, data, and assets produced during
+                      the engagement from day one.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-work-security">
+                  <button class="accordion-trigger">
+                    <span>How does Entwy handle data confidentiality and security?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      We enforce strict NDAs, zero-retention AI policies for client data, encrypted communication
+                      channels, and role-based repository access.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 PROJECTS & ENGAGEMENT -->
+            <div class="faq-category-block" data-block="projects" id="cat-projects">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">PROJECTS &amp; ENGAGEMENT</p>
+                <h2>Flexible models</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-proj-models">
+                  <button class="accordion-trigger">
+                    <span>What engagement models do you offer?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      We provide three main engagement models: Dedicated Product Teams, Fixed-Scope Milestones, and
+                      Specialized AI &amp; Architecture Advisory.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-proj-scale">
+                  <button class="accordion-trigger">
+                    <span>Can we scale team size during the project?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Yes. We adapt team bandwidth and composition as project phases shift from discovery to heavy
+                      engineering and production scaling.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11 SUPPORT & EVOLUTION -->
+            <div class="faq-category-block" data-block="support" id="cat-support">
+              <div class="faq-cat-head">
+                <p class="faq-eyebrow">SUPPORT &amp; EVOLUTION</p>
+                <h2>Long-term success</h2>
+              </div>
+              <div class="accordion-list">
+                <div class="accordion-item" id="q-sup-launch">
+                  <button class="accordion-trigger">
+                    <span>What happens after product launch?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      We offer continuous monitoring, SLA-backed maintenance, feature iteration, model fine-tuning, and
+                      infrastructure optimization post-launch.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="q-sup-start">
+                  <button class="accordion-trigger">
+                    <span>How do we get started?</span>
+                    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.4">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="accordion-panel">
+                    <div class="accordion-panel-inner">
+                      Simply click "Request Demo" or reach out through our contact form. We'll set up an initial
+                      consultation with our product leads within 24 hours.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELATED RESOURCES / MORE FROM ENTWY ============ -->
+    <section class="faq-related">
+      <div class="faq-wrap">
+        <div class="faq-section-head" style="text-align: center; margin-bottom: 44px;">
+          <h2 style="font-size: 40px; font-weight: 800; color: #0F172A; letter-spacing: -0.8px; margin: 0;">More from Entwy</h2>
+        </div>
+        <div class="faq-related-grid">
+          <div class="faq-related-card">
+            <span class="num">01 — SERVICES</span>
+            <h3>Services</h3>
+            <p>Explore how Entwy combines design, engineering, AI, and systems integration.</p>
+            <a href="/" class="cta">Explore Services →</a>
+          </div>
+          <div class="faq-related-card">
+            <span class="num">02 — INDUSTRIES</span>
+            <h3>Industries</h3>
+            <p>See how our approach adapts to different industries and business challenges.</p>
+            <a href="/industries/digital-enterprises-scalable-platforms" class="cta">Explore Industries →</a>
+          </div>
+          <div class="faq-related-card">
+            <span class="num">03 — INSIGHTS</span>
+            <h3>Insights</h3>
+            <p>Read perspectives on AI, product development, design, engineering, and digital transformation.</p>
+            <a href="/insights" class="cta">Explore Insights →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOTTOM CTA BANNER ============ -->
+    <section class="car-bottom-cta-section" style="margin-top: 40px; margin-bottom: 80px;">
+      <div class="car-bottom-banner" style="background: radial-gradient(circle at 10% 20%, rgba(225, 210, 255, 0.7) 0%, transparent 50%), radial-gradient(circle at 90% 80%, rgba(220, 205, 255, 0.7) 0%, transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F4EEFD 30%, #ECE4FC 70%, #F5F0FF 100%);">
+        <div class="car-container" style="max-width: 1200px; text-align: center; gap: 0;">
+          <span style="font-size: 12px; font-weight: 700; color: #5B44F2; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; display: inline-block;">JOIN ENTWY</span>
+          <h2 class="car-cta-heading" style="font-size: 48px; font-weight: 800; color: #0F172A; letter-spacing: -0.8px; margin-bottom: 16px;">Still have questions ?</h2>
+          <p class="car-cta-sub" style="font-size: 15.5px; color: #64748B; margin: 0 auto 36px; max-width: 540px; line-height: 1.6;">
+            Tell us what you're working on and our team will help point you in the right direction.
+          </p>
+          <div class="car-cta-buttons" style="display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <a href="/contact" class="btn-purple-pill" style="height: 46px; min-width: 190px; border-radius: 100px; text-decoration: none; font-size: 14.5px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+              Talk to Our Team
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="/contact" class="btn-white-pill" style="height: 46px; min-width: 140px; border-radius: 100px; text-decoration: none; font-size: 14.5px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center;">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMON FOOTER ============ -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo-wrapper">
+              <img
+                src="/images/entwy-icon.png"
+                alt="Entwy Logo" class="footer-logo">
+              <span class="footer-logo-text">ENTWY</span>
+            </div>
+            <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>COMPANY</h4>
+            </div>
+            <a href="/about">About Us</a>
+            <a href="/insights">Research Insights</a>
+            <a href="/careers">Careers</a>
+            <a href="/faq" style="color: var(--primary); font-weight: 700;">FAQ</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>PRODUCTS</h4>
+            </div>
+            <a href="/product">Huzzler</a>
+            <a href="/wiviy">Wiviy</a>
+            <a href="/rentit">Rentit</a>
+            <a href="/products/mungo">Mungo</a>
+            <a href="/z01">Z01</a>
+            <a href="/zuca">Zuca</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>INDUSTRIES</h4>
+            </div>
+            <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp; Scalable Platforms</a>
+            <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+            <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+            <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+            <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+            <a href="/industries/banking-investment">Banking &amp; Investment</a>
+            <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+            <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4>RESOURCES</h4>
+            </div>
+            <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+            <a href="/entwy-product-design-residency">Product Design Residency</a>
+            <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX 26 Competition</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+            </div>
+            <p class="hq-label">SOUTH ASIA HQ</p>
+            <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564
+                58490</a></p>
+            <p class="email"><a href="mailto:info@entwy.com"
+                style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+            <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi,
+              Chennai - 600096</p>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-header">
+              <span class="col-indicator"></span>
+              <h4 class="invisible">LOCATION</h4>
+            </div>
+            <p class="subtitle">NORTH AMERICA</p>
+            <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+              rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+          <div class="copyright">
+            © 2026 Entwy Digital Private Limited. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('mobile-active');
+    }
+
+    // Accordion Toggle Logic
+    const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+
+    accordionTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.accordion-item');
+        const panel = item.querySelector('.accordion-panel');
+        const isOpen = item.classList.contains('open');
+
+        if (isOpen) {
+          item.classList.remove('open');
+          panel.style.maxHeight = null;
+        } else {
+          item.classList.add('open');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Jump to question and expand (from popular cards and search)
+    function openQuestion(id) {
+      const target = document.getElementById(id);
+      if (target) {
+        // Reset category filter if filtered
+        filterCategory('all');
+
+        const item = target.classList.contains('accordion-item') ? target : target.closest('.accordion-item');
+        if (item) {
+          item.classList.add('open');
+          const panel = item.querySelector('.accordion-panel');
+          if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+
+        setTimeout(() => {
+          window.scrollTo({ top: target.offsetTop - 120, behavior: 'smooth' });
+        }, 100);
+      }
+    }
+
+    document.querySelectorAll('[data-jump]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const jumpId = btn.getAttribute('data-jump');
+        openQuestion(jumpId);
+      });
+    });
+
+    // Category Filtering (Sidebar & Horizontal Chips)
+    const sidebarButtons = document.querySelectorAll('.faq-sidebar-list button');
+    const chipButtons = document.querySelectorAll('.cat-chip');
+    const categoryBlocks = document.querySelectorAll('.faq-category-block');
+
+    function filterCategory(category) {
+      sidebarButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-cat') === category));
+      chipButtons.forEach(c => c.classList.toggle('active', c.getAttribute('data-cat') === category));
+
+      categoryBlocks.forEach(block => {
+        const blockCat = block.getAttribute('data-block');
+        if (category === 'all' || blockCat === category) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+
+      if (category !== 'all') {
+        const targetBlock = document.getElementById(`cat-${category}`);
+        if (targetBlock) {
+          window.scrollTo({ top: targetBlock.offsetTop - 110, behavior: 'smooth' });
+        }
+      }
+    }
+
+    sidebarButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterCategory(btn.getAttribute('data-cat'));
+      });
+    });
+
+    chipButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterCategory(btn.getAttribute('data-cat'));
+      });
+    });
+
+    // Search Filtering
+    const searchInput = document.getElementById('faqSearch');
+    const searchResults = document.getElementById('searchResults');
+    const allItems = Array.from(document.querySelectorAll('.accordion-item'));
+
+    const searchData = allItems.map(item => {
+      const q = item.querySelector('.accordion-trigger span').textContent.trim();
+      const a = item.querySelector('.accordion-panel-inner').textContent.trim();
+      const block = item.closest('.faq-category-block');
+      const cat = block ? block.querySelector('.faq-eyebrow').textContent.trim() : 'General';
+      return { id: item.id, question: q, answer: a, category: cat };
+    });
+
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.toLowerCase().trim();
+      if (!term) {
+        searchResults.classList.remove('show');
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      const matches = searchData.filter(d =>
+        d.question.toLowerCase().includes(term) || d.answer.toLowerCase().includes(term)
+      );
+
+      if (matches.length === 0) {
+        searchResults.innerHTML = `
+          <div style="padding:16px; text-align:center; color:#888; font-size:13.5px;">
+            No matching questions found for "<strong>${escapeHtml(term)}</strong>".
+          </div>
+        `;
+      } else {
+        searchResults.innerHTML = matches.slice(0, 6).map(m => `
+          <div class="faq-search-item" onclick="openQuestion('${m.id}'); document.getElementById('searchResults').classList.remove('show');">
+            <span>${escapeHtml(m.question)}</span>
+            <span class="cat-tag">${escapeHtml(m.category)}</span>
+          </div>
+        `).join('');
+      }
+      searchResults.classList.add('show');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.classList.remove('show');
+      }
+    });
+
+    // Keyboard shortcut (Cmd+K / Ctrl+K)
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // Support click toggle on PRODUCTS dropdown
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = trigger.closest('.nav-item-dropdown');
+        if (parent) {
+          parent.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+      }
+    });
+  </script>
+</body>
+
+</html>

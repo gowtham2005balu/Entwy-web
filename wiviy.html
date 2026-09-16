@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiviy by Entwy | Consumer App</title>
+  <meta name="description"
+    content="Wiviy is Entwy's consumer app designed for everyday engagement. See what Wiviy offers and how it fits into your daily routine.">
+  <meta property="og:title" content="Wiviy by Entwy | Consumer App">
+  <meta property="og:description" content="Wiviy is Entwy's consumer app designed for everyday engagement. See what Wiviy offers and how it fits into your daily routine.">
+  <meta property="og:image" content="https://entwy.com/images/entwy-logo.png">
+  <meta property="og:url" content="https://entwy.com/wiviy">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wiviy by Entwy | Consumer App">
+  <meta name="twitter:description" content="Wiviy is Entwy's consumer app designed for everyday engagement. See what Wiviy offers and how it fits into your daily routine.">
+  <meta name="twitter:image" content="https://entwy.com/images/entwy-logo.png">
+  <link rel="canonical" href="https://entwy.com/wiviy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Poetsen+One&family=Urbanist:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="wiviy-page">
+  <div class="content-wrapper">
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <div class="header-wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/" class="logo-icon">
+            <img src="/images/entwy-logo.png" alt="Entwy Logo" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/">ENTERPRISE</a>
+          <div class="nav-item-dropdown">
+            <a href="/product" class="nav-dropdown-trigger active">
+              PRODUCTS
+              <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-heading">PRODUCTS</div>
+              <div class="dropdown-list">
+                <a href="/product" class="dropdown-link">Huzzler</a>
+                <a href="/wiviy" class="dropdown-link active">Wiviy</a>
+                <a href="/rentit" class="dropdown-link">Rentit</a>
+                <a href="/products/mungo" class="dropdown-link">Mungo</a>
+                <a href="/z01" class="dropdown-link">Z01</a>
+                <a href="/zuca" class="dropdown-link">Zuca</a>
+              </div>
+            </div>
+          </div>
+          <a href="/insights">RESOURCES</a>
+          <a href="/about">ABOUT US</a>
+          <a href="/careers">CAREERS</a>
+          <a href="/contact" class="btn-primary mobile-only-btn">REQUEST DEMO</a>
+        </div>
+
+        <div class="nav-action">
+          <a href="/contact" class="btn-primary desktop-only">
+            REQUEST DEMO
+            <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="wiviy-main-content">
+
+      <!-- ============ SECTION 1: WIVIY HERO / CASE STUDY ============ -->
+      <section class="wiviy-hero-section" id="wiviy-hero">
+        <div class="wiviy-hero-container">
+          <div class="wiviy-hero-canvas">
+
+            <!-- Layer 1: Couple Photo Background (Defines aspect ratio) -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787563593/953adba31f96baa3d13761c3953e0f7d73113c07_ap8dvv.png"
+              alt="Wiviy Couple Background" class="wiviy-hero-img-base" loading="eager" />
+
+            <!-- Layer 1.5: Doodles & Head Designs (Top Left & Boy Head) -->
+            <div class="wiviy-top-left-doodles">
+              <img
+                src="/images/wiviy_boy_doodles.png"
+                alt="Wiviy Stickers and Doodles"
+                class="wiviy-boy-doodles-img"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Layer 1.6: Floating Lime Hearts in Center -->
+            <div class="wiviy-center-floating-hearts">
+              <div class="wiviy-heart-glow-main">
+                <svg width="46" height="46" viewBox="0 0 24 24" fill="#D2FF00">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+              <div class="wiviy-heart-wire-1">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D2FF00" stroke-width="2">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+              <div class="wiviy-heart-wire-2">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D2FF00" stroke-width="2">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Layer 1.7: wiviy Brand Font Logo & Speech Bubble (Near Boy's Neck) -->
+            <div class="wiviy-neck-brand-block">
+              <div class="wiviy-neck-brand-text">wiviy</div>
+              <div class="wiviy-bubble-hello-neck">hello!</div>
+            </div>
+
+            <!-- Layer 2: Dual 3D iPhone Mockups -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787563593/05100adab639d311671846591629ce9f782c5bf8_hkmgnr.png"
+              alt="Wiviy 3D Mobile App Mockups" class="wiviy-hero-img-phones" loading="eager" />
+
+            <!-- Layer 3: Rotating Heart Date Badge -->
+            <div class="wiviy-rotating-badge">
+              <svg class="wiviy-badge-circle-text" viewBox="0 0 160 160">
+                <path id="wiviy-badge-path" d="M 80, 80 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
+                  fill="none" />
+                <text font-family="'Inter', sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF"
+                  letter-spacing="3.2px">
+                  <textPath href="#wiviy-badge-path" startOffset="0%">
+                    • LOVE • CONNECT • DATE •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="wiviy-badge-heart">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#D2FF00">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Layer 4: Case Study Title & Overview (Top Right) -->
+            <div class="wiviy-hero-case-study">
+              <div class="wiviy-eyebrow">— CASE STUDY</div>
+              <h1 class="wiviy-hero-title">
+                With <span class="wiviy-accent-lime">LOVE</span><br />
+                With <span class="wiviy-accent-lime">WIVIY</span>
+              </h1>
+              <h2 class="wiviy-hero-subtitle">
+                A Modern Dating App For Meaningful Connections
+              </h2>
+              <p class="wiviy-hero-desc">
+                Wiviy is a next-generation dating platform designed to help people discover real connections in a safe,
+                fun, and engaging environment.
+              </p>
+            </div>
+
+            <!-- Layer 5: 3 Feature Items (Bottom-Left above Meta Bar) -->
+            <div class="wiviy-features-bar">
+              <!-- Feature 1: Smart Matches -->
+              <div class="wiviy-fcard">
+                <div class="wiviy-fcard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="wiviy-fcard-title">Smart Matches</div>
+                <div class="wiviy-fcard-desc">AI-powered matchmaking that understands your preferences and personality.
+                </div>
+              </div>
+
+              <!-- Feature 2: Safe & Secure -->
+              <div class="wiviy-fcard">
+                <div class="wiviy-fcard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div class="wiviy-fcard-title">Safe & Secure</div>
+                <div class="wiviy-fcard-desc">Verified profiles and advanced privacy features to ensure a trusted
+                  experience.</div>
+              </div>
+
+              <!-- Feature 3: Real Conversations -->
+              <div class="wiviy-fcard">
+                <div class="wiviy-fcard-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div class="wiviy-fcard-title">Real Conversations</div>
+                <div class="wiviy-fcard-desc">Engage in meaningful prompts and build genuine relationships.</div>
+              </div>
+            </div>
+
+            <!-- Layer 6: Project Meta Bar (Bottom) -->
+            <div class="wiviy-project-meta-bar">
+              <div class="wiviy-meta-brand">
+                <div class="wiviy-meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D2FF00" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4l4 16 4-10 4 10 4-16"></path>
+                  </svg>
+                </div>
+                <p class="wiviy-meta-tagline">
+                  Wiviy empowers people to connect with heart, communicate with ease, and build relationships that truly
+                  matter.
+                </p>
+              </div>
+
+              <div class="wiviy-meta-item">
+                <span class="wiviy-meta-label">TOOLS USED</span>
+                <div class="wiviy-meta-tools">
+                  <span class="wiviy-tool-badge tool-f" title="Figma">F</span>
+                  <span class="wiviy-tool-badge tool-ps" title="Photoshop">Ps</span>
+                  <span class="wiviy-tool-badge tool-ai" title="Illustrator">Ai</span>
+                  <span class="wiviy-tool-badge tool-ae" title="After Effects">Ae</span>
+                </div>
+              </div>
+
+              <div class="wiviy-meta-item">
+                <span class="wiviy-meta-label">ROLE</span>
+                <div class="wiviy-meta-val">UI/UX Design<br />Branding</div>
+              </div>
+
+              <div class="wiviy-meta-item">
+                <span class="wiviy-meta-label">YEAR</span>
+                <div class="wiviy-meta-val">2024</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 2: THE CHALLENGE, PROBLEM & SOLUTION ============ -->
+      <section class="wiviy-challenge-section" id="wiviy-challenge">
+        <div class="wiviy-challenge-container">
+          <div class="wiviy-challenge-canvas">
+
+            <!-- Layer 1: Base Background Artwork -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787565010/e039e0ccbbe7c24f0e75ed7d6c72cfb3f42a4057_xatych.png"
+              alt="Wiviy Challenge and Problem Background" class="wiviy-challenge-img-base" loading="lazy" />
+
+            <!-- Left Column: The Challenge, Stat & The Solution -->
+            <div class="wiviy-s2-left-col">
+              <!-- Header -->
+              <div class="wiviy-s2-header-group">
+                <div class="wiviy-s2-badge">
+                  <span class="wiviy-s2-badge-icon">W</span>
+                  <span class="wiviy-s2-badge-text">CASE STUDY</span>
+                </div>
+                <div class="wiviy-s2-top-tagline">
+                  With <span class="wiviy-lime-text">LOVE</span>, With <span class="wiviy-lime-text">WIVIY</span>
+                </div>
+              </div>
+
+              <!-- Challenge Block -->
+              <div class="wiviy-s2-challenge-block">
+                <div class="wiviy-s2-eyebrow">THE CHALLENGE</div>
+                <h2 class="wiviy-s2-heading">
+                  Finding Real Connections<br />
+                  <span class="wiviy-s2-heading-sub">In A Like-First World</span>
+                </h2>
+                <p class="wiviy-s2-p">
+                  Modern dating apps focus on endless swiping and superficial interactions. Wiviy was created to help
+                  users build authentic relationships through meaningful conversations, verified profiles, and intelligent
+                  matchmaking.
+                </p>
+              </div>
+
+              <!-- Stat Box: 87% -->
+              <div class="wiviy-s2-stat-box">
+                <div class="wiviy-s2-stat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.2">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="wiviy-s2-stat-content">
+                  <div class="wiviy-s2-stat-num">87%</div>
+                  <div class="wiviy-s2-stat-text">
+                    of users feel<br>
+                    overwhelmed by<br>
+                    <strong>endless swiping and<br>
+                    low-quality matches.</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- The Solution Block -->
+              <div class="wiviy-s2-solution-block">
+                <div class="wiviy-s2-eyebrow">THE SOLUTION</div>
+                <h3 class="wiviy-s2-subheading">Creating A Safe, Intelligent &amp; Meaningful Dating Experience</h3>
+              </div>
+            </div>
+
+            <!-- Center Column: 3D Phones Mockup Overlay -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787565011/0cf4c35a4f7927e0ef9de8c76c8fb00d1e7d7d74_jjrfpp.png"
+              alt="Wiviy Match and Chat UI Mockups" class="wiviy-challenge-img-overlay" loading="lazy" />
+
+            <!-- Right Column: The Problem Cards Stack -->
+            <div class="wiviy-s2-right-col">
+              <div class="wiviy-s2-eyebrow">THE PROBLEM</div>
+
+              <div class="wiviy-s2-pcards-stack">
+                <!-- Problem Card 1 -->
+                <div class="wiviy-s2-pcard">
+                  <div class="wiviy-s2-pcard-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="wiviy-s2-pcard-text">
+                    <h4>Superficial Matching</h4>
+                    <p>Users judge based on appearance alone.</p>
+                  </div>
+                  <span class="wiviy-s2-pcard-num">01</span>
+                </div>
+
+                <!-- Problem Card 2 -->
+                <div class="wiviy-s2-pcard">
+                  <div class="wiviy-s2-pcard-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div class="wiviy-s2-pcard-text">
+                    <h4>Trust Issues</h4>
+                    <p>Fake profiles reduce confidence.</p>
+                  </div>
+                  <span class="wiviy-s2-pcard-num">02</span>
+                </div>
+
+                <!-- Problem Card 3 -->
+                <div class="wiviy-s2-pcard">
+                  <div class="wiviy-s2-pcard-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="wiviy-s2-pcard-text">
+                    <h4>Meaningful Conversations</h4>
+                    <p>Most matches never become real interactions.</p>
+                  </div>
+                  <span class="wiviy-s2-pcard-num">03</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Row: 3 Feature Cards (Pillars) -->
+            <div class="wiviy-s2-bottom-cards">
+              <!-- Feature 1: Smart Matching -->
+              <div class="wiviy-s2-fcard">
+                <div class="wiviy-s2-fcard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2E05" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z">
+                    </path>
+                    <path
+                      d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="wiviy-s2-fcard-body">
+                  <h4>Smart Matching</h4>
+                  <p>AI-powered compatibility scoring based on interests, lifestyle, and values.</p>
+                </div>
+                <span class="wiviy-s2-fcard-num">01</span>
+              </div>
+
+              <!-- Feature 2: Verified Profiles -->
+              <div class="wiviy-s2-fcard">
+                <div class="wiviy-s2-fcard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2E05" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <div class="wiviy-s2-fcard-body">
+                  <h4>Verified Profiles</h4>
+                  <p>Advanced verification systems for a safer dating experience.</p>
+                </div>
+                <span class="wiviy-s2-fcard-num">02</span>
+              </div>
+
+              <!-- Feature 3: Conversation First -->
+              <div class="wiviy-s2-fcard">
+                <div class="wiviy-s2-fcard-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2E05" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <circle cx="8" cy="10" r="1" fill="#1A2E05"></circle>
+                    <circle cx="12" cy="10" r="1" fill="#1A2E05"></circle>
+                    <circle cx="16" cy="10" r="1" fill="#1A2E05"></circle>
+                  </svg>
+                </div>
+                <div class="wiviy-s2-fcard-body">
+                  <h4>Conversation First</h4>
+                  <p>Meaningful prompts and icebreakers to encourage authentic interactions.</p>
+                </div>
+                <span class="wiviy-s2-fcard-num">03</span>
+              </div>
+            </div>
+
+            <!-- Bottom Project Info Strip -->
+            <div class="wiviy-s2-footer-strip">
+              <div class="wiviy-s2-strip-brand">
+                <span class="wiviy-s2-strip-logo">W</span>
+                <p>Wiviy empowers people to connect with heart, communicate with ease, and build relationships that
+                  truly matter.</p>
+              </div>
+              <div class="wiviy-s2-strip-item">
+                <span class="wiviy-s2-strip-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </span>
+                <span>Real Connections<br>That Last</span>
+              </div>
+              <div class="wiviy-s2-strip-item">
+                <span class="wiviy-s2-strip-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="#84CC16">
+                    <path
+                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                </span>
+                <span>Built With Love<br>For Real People</span>
+              </div>
+              <div class="wiviy-s2-strip-tags">
+                <span>DATE • LOVE • CONNECT • ONE</span>
+                <span class="wiviy-s2-strip-heart">♥</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 3: THE EXPERIENCE ============ -->
+      <section class="wiviy-experience-section" id="wiviy-experience">
+        <div class="wiviy-experience-container">
+          <div class="wiviy-experience-canvas">
+
+            <!-- Layer 1: Base Background Artwork -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787566574/68958245995f039ce391d5cd87339ce1635fb602_plgofq.png"
+              alt="Wiviy The Experience Background" class="wiviy-experience-img-base" loading="lazy" />
+
+            <!-- Top Header Bar Overlay -->
+            <div class="wiviy-s3-top-bar">
+              <div class="wiviy-s3-badge">
+                <span class="wiviy-s3-badge-icon">W</span>
+                <span class="wiviy-s3-badge-text">CASE STUDY</span>
+                <span class="wiviy-s3-badge-divider">|</span>
+                <span class="wiviy-s3-badge-num">03</span>
+              </div>
+              <div class="wiviy-s3-top-tagline">
+                With <span class="wiviy-lime-text">LOVE</span>, With <span class="wiviy-lime-text">WIVIY</span>
+              </div>
+            </div>
+
+            <!-- Left Column: The Experience Header & Floating Cards (01, 03) -->
+            <div class="wiviy-s3-left-col">
+              <div class="wiviy-s3-eyebrow">THE EXPERIENCE</div>
+              <h2 class="wiviy-s3-heading">
+                Experience<br />
+                Designed For<br />
+                <span class="wiviy-lime-text">Meaningful</span><br />
+                <span class="wiviy-lime-text">Connections</span>
+              </h2>
+              <p class="wiviy-s3-p">
+                Wiviy combines intelligent matchmaking, verified identities, and engaging conversations to help users
+                build genuine connections from the very first interaction.
+              </p>
+
+              <!-- Left Floating Cards Stack (01 & 03) -->
+              <div class="wiviy-s3-left-cards">
+                <!-- Card 01: Smart Discovery -->
+                <div class="wiviy-s3-card">
+                  <div class="wiviy-s3-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </div>
+                  <div class="wiviy-s3-card-text">
+                    <h4>Smart Discovery</h4>
+                    <p>AI-powered recommendations based on personality, interests, and lifestyle compatibility.</p>
+                  </div>
+                  <span class="wiviy-s3-card-num">01</span>
+                </div>
+
+                <!-- Card 03: Meaningful Chat -->
+                <div class="wiviy-s3-card">
+                  <div class="wiviy-s3-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                  </div>
+                  <div class="wiviy-s3-card-text">
+                    <h4>Meaningful Chat</h4>
+                    <p>Conversation prompts and icebreakers help users build authentic connections.</p>
+                  </div>
+                  <span class="wiviy-s3-card-num">03</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Center Column: 3D Phone On Podium Overlay -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787566574/810b3b49fbb1fb6e82aaf4c9a2783d26d6120c1b_usmqqr.png"
+              alt="Wiviy 3D Profile Discovery Experience" class="wiviy-experience-img-overlay" loading="lazy" />
+
+            <!-- Right Column: Floating Cards (02, 04) -->
+            <div class="wiviy-s3-right-col">
+              <div class="wiviy-s3-right-cards">
+                <!-- Card 02: Instant Match -->
+                <div class="wiviy-s3-card">
+                  <div class="wiviy-s3-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                  </div>
+                  <div class="wiviy-s3-card-text">
+                    <h4>Instant Match</h4>
+                    <p>Connect instantly with people who share mutual interest and relationship goals.</p>
+                  </div>
+                  <span class="wiviy-s3-card-num">02</span>
+                </div>
+
+                <!-- Card 04: Profile Verification -->
+                <div class="wiviy-s3-card">
+                  <div class="wiviy-s3-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div class="wiviy-s3-card-text">
+                    <h4>Profile Verification</h4>
+                    <p>Trust-first experience with verified profiles and enhanced privacy controls.</p>
+                  </div>
+                  <span class="wiviy-s3-card-num">04</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Row: 4 Metric Cards Strip -->
+            <div class="wiviy-s3-footer-strip">
+              <div class="wiviy-s3-strip-card">
+                <div class="wiviy-s3-strip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="6" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                </div>
+                <div class="wiviy-s3-strip-text">
+                  <span class="wiviy-s3-strip-label">Built for</span>
+                  <h4>Real Connections</h4>
+                  <p>Every interaction matters.</p>
+                </div>
+              </div>
+
+              <div class="wiviy-s3-strip-card">
+                <div class="wiviy-s3-strip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                </div>
+                <div class="wiviy-s3-strip-text">
+                  <span class="wiviy-s3-strip-label">Privacy</span>
+                  <h4>You Can Trust</h4>
+                  <p>Your safety is our priority.</p>
+                </div>
+              </div>
+
+              <div class="wiviy-s3-strip-card">
+                <div class="wiviy-s3-strip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10" />
+                    <line x1="12" y1="20" x2="12" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="14" />
+                  </svg>
+                </div>
+                <div class="wiviy-s3-strip-text">
+                  <span class="wiviy-s3-strip-label">Smarter Matches</span>
+                  <h4>Better Relationships</h4>
+                  <p>Powered by intelligent compatibility.</p>
+                </div>
+              </div>
+
+              <div class="wiviy-s3-strip-card">
+                <div class="wiviy-s3-strip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <div class="wiviy-s3-strip-text">
+                  <span class="wiviy-s3-strip-label">Join Thousands</span>
+                  <h4>Finding Love</h4>
+                  <p>Real people. Real stories.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 4: BRAND SHOWCASE & DESIGN SYSTEM ============ -->
+      <section class="wiviy-showcase-section" id="wiviy-showcase">
+        <div class="wiviy-showcase-container">
+          <div class="wiviy-showcase-canvas">
+
+            <!-- Layer 1: Base Artwork Graphic -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637133/ChatGPT_Image_Aug_25_2026_11_16_34_AM_lvl5sk.png"
+              alt="Wiviy Brand Identity, UI Screens & Design System Showcase" class="wiviy-showcase-img-base"
+              loading="lazy" />
+
+            <!-- Layer 2: Visual Overlaid Content Elements -->
+
+            <!-- Card 1: Top Left - Where Meaningful Matches Begin -->
+            <div class="wiviy-s4-overlay wiviy-s4-c1-overlay">
+              <div class="wiviy-s4-badge">
+                <span class="wiviy-s4-badge-tag">CASE STUDY</span>
+                <span class="wiviy-s4-badge-pill">03</span>
+              </div>
+              <h2 class="wiviy-s4-c1-heading">
+                Where<br />
+                <span class="wiviy-s4-lime">meaningful</span><br />
+                matches<br />
+                begin.<span class="wiviy-s4-heart">♥</span>
+              </h2>
+              <p class="wiviy-s4-c1-desc">
+                Wiviy is designed to help people connect with like-minded souls and build real relationships. No games.
+                Just genuine connections.
+              </p>
+            </div>
+
+            <!-- Card 2: Top Right - Designed for Real Connections -->
+            <div class="wiviy-s4-overlay wiviy-s4-c2-overlay">
+              <h3 class="wiviy-s4-c2-heading">
+                Designed for<br />
+                <span class="wiviy-s4-lime">real connections</span>
+              </h3>
+            </div>
+
+            <!-- Card 3: Middle Right - Your Next Great Story Starts Here -->
+            <div class="wiviy-s4-overlay wiviy-s4-c3-overlay">
+              <h2 class="wiviy-s4-c3-heading">
+                Your next<br />
+                <span class="wiviy-s4-lime">great story</span><br />
+                starts here.<span class="wiviy-s4-heart">♥</span>
+              </h2>
+              <div class="wiviy-s4-c3-bar"></div>
+              <p class="wiviy-s4-c3-desc">
+                Every connection has the potential to become something beautiful. Take the first step.
+              </p>
+            </div>
+
+            <!-- Card 4: Bottom Left - Find Your Perfect Match & 4 Features -->
+            <div class="wiviy-s4-overlay wiviy-s4-c4-overlay">
+              <h3 class="wiviy-s4-c4-heading">
+                Find your<br />
+                <span class="wiviy-s4-lime">perfect match ♥</span>
+              </h3>
+              <div class="wiviy-s4-c4-icons">
+                <div class="wiviy-s4-c4-feat">
+                  <div class="wiviy-s4-feat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.2">
+                      <circle cx="12" cy="12" r="10" />
+                      <circle cx="12" cy="12" r="6" />
+                      <circle cx="12" cy="12" r="2" />
+                    </svg>
+                  </div>
+                  <span>Smart<br>Matching</span>
+                </div>
+                <div class="wiviy-s4-c4-feat">
+                  <div class="wiviy-s4-feat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  </div>
+                  <span>Verified<br>Profiles</span>
+                </div>
+                <div class="wiviy-s4-c4-feat">
+                  <div class="wiviy-s4-feat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.2">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                  </div>
+                  <span>Private &amp;<br>Secure</span>
+                </div>
+                <div class="wiviy-s4-c4-feat">
+                  <div class="wiviy-s4-feat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#84CC16" stroke-width="2.2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                  </div>
+                  <span>Meaningful<br>Conversations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Bottom Right - Brand Typeface & Colors -->
+            <div class="wiviy-s4-overlay wiviy-s4-c5-overlay">
+              <div class="wiviy-s4-c5-top">
+                <span class="wiviy-s4-c5-label">Brand Typeface</span>
+                <h4 class="wiviy-s4-c5-name">Urbanist</h4>
+              </div>
+              <div class="wiviy-s4-c5-body">
+                <div class="wiviy-s4-c5-big-aa">Aa</div>
+                <div class="wiviy-s4-c5-specimen">
+                  <div class="wiviy-s4-alpha-upper">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                  <div class="wiviy-s4-alpha-lower">abcdefghijklmnopqrstuvwxyz</div>
+                  <div class="wiviy-s4-alpha-num">0123456789</div>
+                  <div class="wiviy-s4-color-dots">
+                    <span style="background: #84CC16;"></span>
+                    <span style="background: #FEF08A;"></span>
+                    <span style="background: #F472B6;"></span>
+                    <span style="background: #8B5CF6;"></span>
+                    <span style="background: #0F172A;"></span>
+                    <span style="background: #CBD5E1;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SECTION 5: BRAND IDENTITY, PALETTE & KEYWORDS ============ -->
+      <section class="wiviy-brand-section" id="wiviy-brand">
+        <div class="wiviy-brand-container">
+          <div class="wiviy-brand-canvas">
+
+            <!-- Layer 1: Base Artwork Canvas Graphic -->
+            <img
+              src="https://res.cloudinary.com/dqsyzpxkg/image/upload/v1787637284/ChatGPT_Image_Aug_25_2026_11_24_32_AM_boxvs9.png"
+              alt="Wiviy Brand Identity - Designed to feel playful. Built to create meaningful connections."
+              class="wiviy-brand-img-base" loading="lazy" />
+
+            <!-- Layer 2: Overlaid Visual Text Elements -->
+
+            <!-- 1. Top-Left Content -->
+            <div class="wiviy-s5-topleft">
+              <div class="wiviy-s5-badge">
+                <span class="wiviy-s5-badge-tag">CASE STUDY</span>
+                <span class="wiviy-s5-badge-pill">05</span>
+              </div>
+              <div class="wiviy-s5-script-eyebrow">The Wiviy</div>
+              <h2 class="wiviy-s5-heading">
+                Designed to<br />
+                feel <span class="wiviy-s5-lime">playful.</span><br />
+                Built to create<br />
+                <span class="wiviy-s5-lime">meaningful<br />connections</span><span class="wiviy-s5-heart"> ♥</span>
+              </h2>
+              <p class="wiviy-s5-p">
+                Wiviy blends human emotions, expressive visuals, and modern interaction design to make every connection
+                feel personal.
+              </p>
+            </div>
+
+            <!-- 2. Brand Palette Swatch Labels (Under the 3 circles) -->
+            <div class="wiviy-s5-palette-labels">
+              <div class="wiviy-s5-swatch-item">
+                <span class="wiviy-s5-swatch-name">Lime Green</span>
+                <span class="wiviy-s5-swatch-hex">#C6FF00</span>
+              </div>
+              <div class="wiviy-s5-swatch-item">
+                <span class="wiviy-s5-swatch-name">Soft White</span>
+                <span class="wiviy-s5-swatch-hex">#FAFAFA</span>
+              </div>
+              <div class="wiviy-s5-swatch-item">
+                <span class="wiviy-s5-swatch-name">Charcoal Black</span>
+                <span class="wiviy-s5-swatch-hex">#1A1A1A</span>
+              </div>
+            </div>
+
+            <!-- 3. Center Script Text (Under the 3D heart) -->
+            <div class="wiviy-s5-center-script">
+              Find Connection<br />
+              Grow Together<br />
+              Build Moments 💛
+            </div>
+
+            <!-- 4. Right Side Feature Cards Text -->
+            <div class="wiviy-s5-rcard wiviy-s5-rcard-1">
+              <h4>Playful<br>Interactions</h4>
+              <p>Friendly animations and delightful micro-interactions make conversations fun and engaging.</p>
+              <div class="wiviy-s5-rcard-line"></div>
+            </div>
+
+            <div class="wiviy-s5-rcard wiviy-s5-rcard-2">
+              <h4>Human-Centered<br>Design</h4>
+              <p>Emotional visual language and intuitive user journeys that focus on real human connections.</p>
+              <div class="wiviy-s5-rcard-line"></div>
+            </div>
+
+            <div class="wiviy-s5-rcard wiviy-s5-rcard-3">
+              <h4>Trust &amp; Safety</h4>
+              <p>Verified profiles, secure communication, and advanced safety measures to keep every user safe.</p>
+              <div class="wiviy-s5-rcard-line"></div>
+            </div>
+
+            <!-- 5. Bottom Brand Keywords Labels (Under sticky note icons) -->
+            <div class="wiviy-s5-keywords-row">
+              <div class="wiviy-s5-keyword-label">Meaningful</div>
+              <div class="wiviy-s5-keyword-label">Authentic</div>
+              <div class="wiviy-s5-keyword-label">Playful</div>
+              <div class="wiviy-s5-keyword-label light">Secure</div>
+              <div class="wiviy-s5-keyword-label">Modern</div>
+              <div class="wiviy-s5-keyword-label">Expressive</div>
+              <div class="wiviy-s5-keyword-label">Human</div>
+              <div class="wiviy-s5-keyword-label light">Connected</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+  </div>
+  </div>
+  </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-wrapper">
+            <img src="/images/entwy-icon.png" alt="Entwy Logo" class="footer-logo">
+            <span class="footer-logo-text">ENTWY</span>
+          </div>
+          <p>Building intelligent products, AI systems, and digital experiences for ambitious businesses.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4>COMPANY</h4>
+          </div>
+          <a href="/about">About Us</a>
+          <a href="/insights">Research Insights</a>
+          <a href="/careers">Careers</a>
+          <a href="/faq">FAQ</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4>PRODUCTS</h4>
+          </div>
+          <a href="/product">Huzzler</a>
+          <a href="/wiviy">Wiviy</a>
+          <a href="/rentit">Rentit</a>
+          <a href="/products/mungo">Mungo</a>
+          <a href="/z01">Z01</a>
+          <a href="/zuca">Zuca</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4>INDUSTRIES</h4>
+          </div>
+          <a href="/industries/digital-enterprises-scalable-platforms">Digital Enterprises &amp; Scalable Platforms</a>
+          <a href="/industries/education-learning-skill-development">Education, Learning &amp; Skill Development</a>
+          <a href="/industries/consumer-products-retail-innovation">Consumer Products &amp; Retail Innovation</a>
+          <a href="/industries/lifestyle-wellness-personal-care">Lifestyle, Wellness &amp; Personal Care</a>
+          <a href="/industries/healthcare-insurance-pharmaceutical">Healthcare, Insurance &amp; Pharmaceutical</a>
+          <a href="/industries/banking-investment">Banking &amp; Investment</a>
+          <a href="/industries/energy-commodities-industrial-supply">Energy, Commodities &amp; Industrial Supply</a>
+          <a href="/industries/supply-chain-logistics">Supply Chain &amp; Logistics</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4>RESOURCES</h4>
+          </div>
+          <a href="/entwy-uiux-design-residency">UI/UX Design Residency</a>
+          <a href="/entwy-product-design-residency">Product Design Residency</a>
+          <a href="https://www.zuntra.com/uiuxdesignawards2026-zuntra" target="_blank" rel="noopener noreferrer">UI/UX
+            26 Competition</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms and Conditions</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4><a href="/contact" style="color: inherit; text-decoration: none;">CONTACT</a></h4>
+          </div>
+          <p class="hq-label">SOUTH ASIA HQ</p>
+          <p class="phone"><a href="tel:+918056458490" style="color: inherit; text-decoration: none;">+91 80564
+              58490</a></p>
+          <p class="email"><a href="mailto:info@entwy.com"
+              style="color: inherit; text-decoration: none;">info@entwy.com</a></p>
+          <p class="address">No 61, 3rd Floor, Estate Main Rd,<br>Developed Plots, Industrial<br>Estate,<br>Perungudi,
+            Chennai - 600096</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-header">
+            <span class="col-indicator"></span>
+            <h4 class="invisible">LOCATION</h4>
+          </div>
+          <p class="subtitle">NORTH AMERICA</p>
+          <p class="address">NEW YORK<br>631 4th Ave<br>Brooklyn, NY 11232</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/entwy.design?igsh=MXRrNzRtMWM3MDV5eQ==" target="_blank"
+            rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/entwy/" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="https://x.com/entwy41593" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@ENTWY-official" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.084 0 12 0 12s0 3.916.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.916 24 12 24 12s0-3.916-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+          <a href="https://pin.it/CfP2FErlo" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Pinterest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.057.238-.19.288-.438.175-1.637-.762-2.66-3.151-2.66-5.073 0-4.13 3.001-7.924 8.656-7.924 4.544 0 8.077 3.238 8.077 7.568 0 4.515-2.846 8.149-6.797 8.149-1.328 0-2.576-.69-3.004-1.507l-.816 3.111c-.295 1.139-1.094 2.566-1.632 3.435 1.22.376 2.518.579 3.864.579 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+        <div class="copyright">
+          © 2026 Entwy Digital Private Limited. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('mobile-active');
+        navLinks.classList.toggle('active');
+      }
+    }
+
+    // Support click toggle on PRODUCTS dropdown
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = trigger.closest('.nav-item-dropdown');
+        if (parent) {
+          parent.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-item-dropdown')) {
+        document.querySelectorAll('.nav-item-dropdown').forEach(d => d.classList.remove('dropdown-open'));
+      }
+    });
+  </script>
+</body>
+
+</html>
